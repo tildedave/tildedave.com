@@ -1,0 +1,9 @@
+auto:           true
+baseurl:        /
+server:         true
+server_port:    4000
+
+paginate:       5
+markdown: redcarpet2
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
