@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Using JQuery AJAX instead of CFAJAXProxy'
-
 ---
 
 This is a sufficiently wacky enough scenario that I don't think it will be useful for everyone, but I learned a bunch about how JavaScript and ColdFusion interact from client to server so writing this up is probably worthwhile.

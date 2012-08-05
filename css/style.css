@@ -1,0 +1,29 @@
+body {
+  font-family: Verdana,arial,sans-serif,helvetica;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+li {
+  padding-bottom: 2px;
+}
+
+.content {
+  margin: 0 100px;
+  padding: 20px;
+}
+
+.post-content {
+  max-width: 760px;
+}
+
+.post-content p {
+  font-size: 16px;
+}

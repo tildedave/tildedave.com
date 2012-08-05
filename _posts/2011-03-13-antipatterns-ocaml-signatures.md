@@ -63,7 +63,7 @@ Taking away all the bad data structures, we are left with a single function whos
 
 This is probably how I'd approach a refactoring on this signature (and its corresponding modules') functionality.
 
-```
+```ocaml
 module type PARSEDCONSTRAINTFILE =
   sig
       (* actual type of t must be defined by

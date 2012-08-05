@@ -78,7 +78,7 @@ public class MyWorker extends BaseWorker {
 
 Except of course the above is the well-known 'service' construct.  Let's inject the `UserService` into the constructor of `BaseWorker`.
 
-<pre lang="java">
+```java
 public class UserService {
 	public User getUser(String username) {
 		// get user from DB
@@ -112,7 +112,7 @@ public class MyWorker extends BaseWorker {
 		User u = this.userService.getUser(username);
 	}
 }
-</pre>
+```
 
 With the `UserService` pulled out and put in the constructor,  we can mock it out and write effective unit tests for parent class and subclass, as well as wire it together with a dependency injection framework.
 

@@ -180,9 +180,9 @@ public class JLiftConstructorDecl_c extends JifConstructorDecl_c {
 
 For this one I at least had an excuse.  C extends B extends A; all of them implement `foo`.  Sometimes we want C to call A's `foo`, sometimes we want to call B's `foo`.  Unfortunately, Java's inheritance model doesn't support that. Solution: copy and paste some code!
 
-## Method that's Way Way Way Too Long
+## Method That's Way Way Way Too Long
 
-```
+```ocaml
 let constraint_set_to_flowgraph cl lattice =
   match cl with
     | [] -> G.create ()
