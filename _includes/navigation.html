@@ -1,0 +1,9 @@
+<div class="post-navigation">
+{% if page.previous %}
+  <a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a>
+{% endif %}
+  <a rel="posts" href="/posts.html">All Posts</a>
+{% if page.next %}
+  <a rel="next" href="{{ page.next.url }}">Next &rarr;</a>
+{% endif %}
+</div>

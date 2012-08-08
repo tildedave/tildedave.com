@@ -1,24 +1,22 @@
 ---
 layout: default
 ---
-<h1 class="post-title">{{page.title}}</h1>
 
-<div class="post-content">
-{{content}}
-</div>
+<article>
 
-<div class="post-contact">
-Confused about something here?  Think I'm totally wrong?  Tell me so
-at <a href="https://twitter.com/tildedave">@tildedave</a>
-or <a href="mailto:tildedave_at_gmail_dot_com">email me</a>.
-</div>
+  {% include navigation.html %}
 
-<div class="post-navigation">
-{% if page.previous %}
-  <a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a>
-{% endif %}
-  <a rel="posts" href="/posts.html">All Posts</a>
-{% if page.next %}
-  <a rel="next" href="{{ page.next.url }}">Next &rarr;</a>
-{% endif %}
-</div>
+  <h1 class="post-title">{{page.title}}</h1>
+
+  <div class="post-content">
+    {{content}}
+  </div>
+
+  <div class="post-contact">
+    Confused about something here?  Think I'm totally wrong?  Tell me so
+    at <a href="https://twitter.com/tildedave">@tildedave</a>
+    or <a href="mailto:tildedave_at_gmail_dot_com">email me</a>.
+  </div>
+
+  {% include navigation.html %}
+</article>

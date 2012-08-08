@@ -4,21 +4,28 @@ layout: default
 ---
 
 {% assign lastpost = site.posts.first %}
-<h1 class="post-title">{{ lastpost.title }}</h1>
 
-<div class="post-content">
-{{ lastpost.content }}
-</div>
+<article>
+  <div class="all-posts">
+    <a rel="posts" href="/posts.html">All Posts</a>
+  </div>
 
-<div class="post-contact">
-Confused about something here?  Think I'm totally wrong?  Tell me so
-at <a href="https://twitter.com/tildedave">@tildedave</a>
-or <a href="mailto:tildedave_at_gmail_dot_com">email me</a>.
-</div>
+  <h1 class="post-title">{{ lastpost.title }}</h1>
 
-<div class="post-navigation">
-{% if lastpost.previous %}
-  <a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a>
-{% endif %}
-  <a rel="posts" href="/posts.html">All Posts</a>
-</div>
+  <div class="post-content">
+  {{ lastpost.content }}
+  </div>
+
+  <div class="post-contact">
+    Confused about something here?  Think I'm totally wrong?  Tell me so
+    at <a href="{{ site.twitter}}">@tildedave</a>
+    or <a href="mailto:{{ site.email}}">email me</a>.
+  </div>
+
+  <div class="post-navigation">
+    {% if lastpost.previous %}
+    <a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a>
+    {% endif %}
+    <a rel="posts" href="/posts.html">All Posts</a>
+  </div>
+</article>

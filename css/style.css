@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h2 {
@@ -15,15 +15,56 @@ li {
   padding-bottom: 2px;
 }
 
+.banner {
+  margin: 0 120px;
+  font-size: 32px;
+}
+
+.table-of-contents {
+  margin: 0 120px;
+}
+
 .content {
+  padding-top: 20px;
+}
+
+.content article {
   margin: 0 100px;
-  padding: 20px;
-}
-
-.post-content {
-  max-width: 760px;
-}
-
-.post-content p {
+  padding: 0 20px;
+  max-width: 800px;
   font-size: 16px;
+}
+
+.about {
+  display: inline-block;
+  margin: 0 0 20px 120px;
+  padding: 20px;
+  background-color: #EEE;
+  max-width: 740px;
+}
+
+.self-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.who-i-am {
+  float: right;
+  width: 200px;
+  padding: 0 40px;
+}
+
+.who-i-am ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.post-navigation {
+ text-align: center;
+ margin: 10px 0;
+}
+
+.post-navigation a {
+  margin: 0 20px;
 }
