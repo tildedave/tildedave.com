@@ -6,7 +6,10 @@ layout: default
 {% assign lastpost = site.posts.first %}
 
 <article>
-  <div class="all-posts">
+  <div class="post-navigation">
+    {% if lastpost.previous %}
+    <a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a>
+    {% endif %}
     <a rel="posts" href="/posts.html">All Posts</a>
   </div>
 
