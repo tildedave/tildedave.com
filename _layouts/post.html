@@ -6,7 +6,7 @@ layout: default
 
   {% include navigation.html %}
 
-  <h1 class="post-title">{{page.title}}</h1>
+  <h1 class="post-title"><a href="{{page.url}}" class="self-link">{{page.title}}</a></h1>
 
   <div class="post-content">
     {{content}}

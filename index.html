@@ -10,7 +10,7 @@ layout: default
     <a rel="posts" href="/posts.html">All Posts</a>
   </div>
 
-  <h1 class="post-title">{{ lastpost.title }}</h1>
+  <h1 class="post-title"><a href="{{lastpost.url}}" class="self-link">{{ lastpost.title }}</a></h1>
 
   <div class="post-content">
   {{ lastpost.content }}
