@@ -31,10 +31,13 @@ li {
 article {
   margin: 0 100px;
   padding: 0 20px;
-  max-width: 800px;
 }
 
 article p {
+  font-size: 18px;
+}
+
+article code {
   font-size: 16px;
 }
 
@@ -53,7 +56,7 @@ article p {
 
 .who-i-am {
   float: right;
-  width: 200px;
+  width: 260px;
   padding: 0 40px;
 }
 
