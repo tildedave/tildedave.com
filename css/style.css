@@ -31,11 +31,11 @@ li {
 article {
   margin: 0 100px;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 article code {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .about {
