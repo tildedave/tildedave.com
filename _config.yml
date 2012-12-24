@@ -13,3 +13,7 @@ twitter:        "https://twitter.com/tildedave"
 github:         "https://github.com/tildedave"
 linkedin:       "http://www.linkedin.com/pub/dave-king/29/ba1/734"
 email:          "tildedave_at_gmail_dot_com"
+
+name:           davehking.com
+description:    Dave King blogs about software patterns, functional programming, and testing.
+url:            http://www.davehking.com
