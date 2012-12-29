@@ -2,36 +2,37 @@
 <html lang="en-us">
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css"></link>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/foundation/3.2.2/stylesheets/foundation.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css"></link>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css"></link>
   </head>
   <body>
 
-    <div class="banner">
-      <h1><a href="/" class="self-link">davehking.com</a></h1>
-    </div>
+    <div class="body eleven columns offset-by-one">
 
-    <div class="header">
-      <div class="about">
-        <p>Hi, I'm Dave, a software professional living in Blacksburg, VA.  I work for <a href="http://www.rackspace.com">Rackspace</a> as a Senior Software Developer.
+      <header class="row">
+        <h1><a href="/" class="self-link">davehking.com</a></h1>
+        <h4 class="subheader">Hi, I'm Dave, a software professional living in Blacksburg, VA.  I work for <a href="http://www.rackspace.com">Rackspace</a> as a Senior Software Developer.  I mostly do <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a> these days.</h4>
+      </header>
 
-        <p>I believe strongly in creating an active environment where engineers are able to do the "right things" that enable faster delivery of better software. I blog about software patterns, functional programming, and testing.</p>
+      <div class="row">
+        <div class="who-i-am three columns push-nine">
+          <img src="{{ site.picture }}" alt="A picture of me on Bike Virginia 2012.">
+
+          <ul class="disc">
+            <li><a href="/me.html">About Me</a></li>
+            <li class="twitter"><a href="{{ site.twitter }}">@tildedave</a></li>
+            <li class="github"><a href="{{ site.github }}">Github</a></li>
+            <li class="linkedin"><a href="{{ site.linkedin }}">LinkedIn</a></li>
+            <li class="rss"><a href="{{ site.rss }}">RSS Feed</a></li>
+            <li><a href="/posts.html">All Posts</a></li>
+          </ul>
+        </div>
+
+        <div class="content nine columns pull-three">
+          {{ content }}
+        </div>
       </div>
-      <div class="who-i-am">
-        <img src="{{ site.picture }}" alt="A picture of me on Bike Virginia 2012.">
-        <ul>
-          <li class="twitter"><a href="{{ site.twitter }}">@tildedave</a></li>
-          <li class="github"><a href="{{ site.github }}">Github</a></li>
-          <li class="linkedin"><a href="{{ site.linkedin }}">LinkedIn</a></li>
-          <li class="rss"><a href="{{ site.rss }}">RSS Feed</a></li>
-        </ul>
-        <p>Over the years I've worked on a <a href="http://community.pennmush.org/book/export/html/536">MUSHCode</a> space system, a charter school lottery, and a <a href="https://github.com/tildedave/apep-chess-engine">chess engine</a>.  I'm always looking to get better and build the next big thing.</p>
-        <p>In <a href="/academics.html">another life</a>, I was a PhD student studying security-enforcing compilers.</p>
-      </div>
-    </div>
-
-    <div class="content">
-    {{ content }}
     </div>
   </body>
 </html>

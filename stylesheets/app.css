@@ -1,0 +1,19 @@
+code {
+  line-height: 20px;
+  font-weight: normal;
+  background: #FFF;
+}
+
+.highlight {
+  padding: 10px 0px;
+}
+
+ul {
+  liststyle-type: disc;
+  margin-left: 17px;
+}
+
+.self-link {
+  text-decoration: none;
+  color: #000;
+}

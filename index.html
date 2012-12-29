@@ -6,29 +6,16 @@ layout: default
 {% assign lastpost = site.posts.first %}
 
 <article>
-  <div class="post-navigation">
-    {% if lastpost.previous %}
-    <a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a>
-    {% endif %}
-    <a rel="posts" href="/posts.html">All Posts</a>
-  </div>
-
   <h1 class="post-title"><a href="{{lastpost.url}}" class="self-link">{{ lastpost.title }}</a></h1>
 
   <div class="post-content">
   {{ lastpost.content }}
   </div>
 
-  <div class="post-contact">
-    Confused about something here?  Think I'm totally wrong?  Tell me so
-    at <a href="{{ site.twitter}}">@tildedave</a>
-    or <a href="mailto:{{ site.email}}">email me</a>.
-  </div>
-
-  <div class="post-navigation">
+  <dl class="sub-nav">
     {% if lastpost.previous %}
-    <a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a>
+    <dd><a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a></dd>
     {% endif %}
-    <a rel="posts" href="/posts.html">All Posts</a>
-  </div>
+    <dd><a rel="posts" href="/posts.html">All Posts</a></dd>
+  </dl>
 </article>

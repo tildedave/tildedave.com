@@ -1,9 +1,9 @@
-<div class="post-navigation">
+<dl class="sub-nav">
 {% if page.previous %}
-  <a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a>
+  <dd><a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a></dd>
 {% endif %}
-  <a rel="posts" href="/posts.html">All Posts</a>
+  <dd><a rel="posts" href="/posts.html">All Posts</a></dd>
 {% if page.next %}
-  <a rel="next" href="{{ page.next.url }}">Next &rarr;</a>
+  <dd><a rel="next" href="{{ page.next.url }}">Next &rarr;</a></dd>
 {% endif %}
-</div>
+</dl>
