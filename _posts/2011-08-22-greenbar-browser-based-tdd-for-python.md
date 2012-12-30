@@ -4,7 +4,7 @@ title: 'Greenbar: Browser-Based TDD for Python'
 
 ---
 
-I am not a fan of dynamic languages.  Ultimately I believe they solve the wrong problems: static languages prevent a lot of boneheaded mistakes by allowing you to give guarantees to your code before it is even executed.  I've [written before FIXME](http://www.davehking.com/wordpress/?p=59) about how one of Java's backdoor features is that jamming operations together becomes a mess.
+I am not a fan of dynamic languages.  Ultimately I believe they solve the wrong problems: static languages prevent a lot of boneheaded mistakes by allowing you to give guarantees to your code before it is even executed.  I've written before about how one of Java's backdoor features is that jamming operations together becomes a mess.
 
 When developing in dynamic languages like Python and Ruby, it is even more important to provide a comprehensive unit test suite describing the low-level contract of the system than usual.  You have no compiler step to save you from yourself -- the interpreter assumes that you know what you're doing, leading you to rely on tests more than ever.
 
@@ -53,4 +53,3 @@ If you haven't tried out browser-based TDD, you are missing out -- the rapid cyc
 * [Jasmine](http://pivotal.github.com/jasmine/)
 * [PHPUnit Test Report](http://mattmueller.me/blog/phpunit-test-report-unit-testing-in-the-browser) (PHP)
 * [MXUnit](http://mxunit.org) (ColdFusion)
-
