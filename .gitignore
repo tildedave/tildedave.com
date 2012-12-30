@@ -1,2 +1,6 @@
 *~
 _site
+_cache
+.sass-cache
+stylesheets/app.css
+stylesheets/site.css
