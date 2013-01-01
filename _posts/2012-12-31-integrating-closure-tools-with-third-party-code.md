@@ -160,7 +160,11 @@ Compiler from renaming these variables and functions, as well as
 provide type checking at the boundaries between our code and the
 library.
 
-This matches a common technical in program analysis -- if you have a
+Note that while Spine depends on JQuery internally, we do not need an
+externs file for JQuery because we do not call it within our
+application (what the compiler sees).
+
+This matches a common technique in program analysis -- if you have a
 portion of your code that the compiler grants special properties (in
 this case, type-checking of JavaScript), but your code deals with
 external libraries, you specify the how the boundaries of these
