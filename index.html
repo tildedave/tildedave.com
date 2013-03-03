@@ -12,6 +12,8 @@ layout: default
   {{ lastpost.content }}
   </div>
 
+  {% include contact.html %}
+
   <dl class="sub-nav">
     {% if lastpost.previous %}
     <dd><a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a></dd>
