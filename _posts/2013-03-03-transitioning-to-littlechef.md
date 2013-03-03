@@ -52,7 +52,7 @@ Using a push model such as LittleChef, you replace this trust relationship with 
 
 While the deployment node *might* be your developer machine, I wouldn't recommend this as your only solution as your team grows.  LittleChef enables a better workflow for testing recipes on remote nodes; push then commit rather than a upload possibly bad configuration to the server.  Production deploys should happen from a controlled box with an automated process, using automation tools such as [Jenkins](http://jenkins-ci.org/), [Deployinator](https://github.com/etsy/deployinator), or [Dreadnot](https://github.com/racker/dreadnot) (what my team uses).
 
-The data bag decryption key no longer being on the client is bit of a red herring: the data bag decryption key is copied to the client during deploys and removed afterwards.  Besides, if you are writing formerly encrypted data unencrypted into your configuration files the client still has access to all the same encrypted information.
+The data bag decryption key no longer being on the client is bit of a red herring: the data bag decryption key is copied to the client during deploys and removed afterwards.  Besides, if you are writing formerly encrypted data unencrypted into your configuration files the client still has access to all the same secret information.
 
 ## Why Switch?
 
