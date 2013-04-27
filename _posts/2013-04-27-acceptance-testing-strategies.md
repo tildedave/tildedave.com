@@ -47,7 +47,7 @@ describe('create DNS record') do
       type: 'A/AAAA',
       ip_address: ip_address
     })
-    details_view.records_list.join(',').should include(record[:hostname])
+    details_view.records_list.join(',').should include(hostname)
   end
 end
 ```
