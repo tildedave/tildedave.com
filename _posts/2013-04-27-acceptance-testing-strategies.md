@@ -75,9 +75,9 @@ Acceptance testing in a heavily service-oriented application comes with a number
 * data setup and teardown
 * bugs in our application with varying incidences of reproducibility
 * bugs in other services with varying incidences of reproducibility
-* behaviors that are different between
+* behaviors that are different between 'staging' and 'production' service versions
 * tests taking too long because of test behavior
-* tests taking too long because of
+* tests taking too long because of other services
 * bugs in Rackspace SDKs (that we use to aid the tests)
 * new service versions that have broken Rackspace SDKs
 * selenium race conditions caused by poorly written tests
@@ -95,6 +95,6 @@ Because web applications involve a number of different technology stacks, it's r
 
 ## Conclusion
 
-Before my current project I was a firm believer in unit tests and didn't quite understand the focus on end-to-end system tests (this despite the fact that one of my first part-time software jobs was in creating test harnesses for integration-level suites).  In helping to build our pipeline, I've come to realize that acceptance-level testing is critical to be able to release safely and frequently without a manual testing phase.
+Before my current project I was a firm believer in unit tests and didn't quite understand the focus on end-to-end system tests (this despite the fact that my first paid software job involved creating test harnesses for integration-level suites).  In helping to build our pipeline, I've come to realize that acceptance-level testing is critical to be able to release safely and frequently without a manual testing phase.
 
 A great book that talks about the benefits of integration-level testing and its interaction with traditional Test-Driven Development is [Growing Object-Oriented Sofware, Guided by Tests](http://www.growing-object-oriented-software.com/).  This book challenged a lot of my traditional assumptions about the level of testing was helpful for a project, both in terms of preventing defects (which I've mainly focused on here) and how tests supporting agile design.
