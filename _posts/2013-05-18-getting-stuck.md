@@ -25,7 +25,7 @@ It's easy to spend a lot of time trying the same strategy without success, and t
 
 ### Am I Stuck?
 
-Of course all of these strategies rely on you even being _aware_ that you are stuck.  In graduate school I wasted trying to solve problems unsuccessfully with the wrong strategies.  A lot of this is baked into the graduate student experience, but I could have spent a lot more time talking to people about these problems and bouncing possible solutions off them.  I just didn't know I was in a place where I was stuck: I thought the next step was going to validate all the work I had put in and everything would 'click'.
+Of course all of these strategies rely on you even being _aware_ that you are stuck.  In graduate school I wasted weeks trying to solve problems unsuccessfully with the wrong strategies.  A lot of this is baked into the graduate student experience, but I could have spent a lot more time talking to people about these problems and bouncing possible solutions off them.  I just didn't know I was in a place where I was stuck: I thought the next step was going to validate all the work I had put in and everything would 'click'.
 
 The more experience that I've gotten in software development, the more obvious it is when I'm entering an area I don't understand.  When I'm doing this kind of work, my guard is usually up and I'm constantly validating the work I'm doing to make sure I'm making progress towards a solution.
 
