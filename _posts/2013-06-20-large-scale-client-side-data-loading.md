@@ -115,7 +115,7 @@ _Aggregate services_ contain data associated with an individual service type and
 To keep our JavaScript files small, services are only created **on demand**: requesting data from a new provider or a compute type will first load a new [JavaScript module](http://plovr.com/modules.html), which on loaded, registers how to create the service.  The step looks like:
 
 * Request comes in for the `["compute", data.Servers]` address
-* The service associated is not loaded yet.
+* The service associated with this address is not loaded yet.
 * The "compute" service type requires loading the `compute_service` JavaScript module.  This module begins loading.
 * The `compute_service` module has finished loaded; after load, a compute service associated with every region a custom has access to (Dallas, Chicago) created.
 * The aggregated collection containing the servers from every region is returned.
