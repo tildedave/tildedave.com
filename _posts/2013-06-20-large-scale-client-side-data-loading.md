@@ -130,7 +130,7 @@ The ViewComponent accesses the hierarchy of aggregate services, services, and th
 
 The main function of the `ServiceRegistry` is looking up resources by address.  The second function is to force the load of a resource through the `require` function.  `require` takes a list of addresses and two callbacks, `onLoaded` and `onError`, and invokes the appropriate callback based on whether or  not the resources loaded successfully.
 
-Here's some psuedocode for how this occurs: the main class we used for this is the Closure implementation of [`goog.async.Deferred`](http://docs.closure-library.googlecode.com/git/class_goog_async_Deferred.html), based on the [MochiKit implementation](http://mochi.github.io/mochikit/doc/html/MochiKit/Async.html).
+Here's some pseudocode for how this occurs: the main class we used for this is the Closure implementation of [`goog.async.Deferred`](http://docs.closure-library.googlecode.com/git/class_goog_async_Deferred.html), based on the [MochiKit implementation](http://mochi.github.io/mochikit/doc/html/MochiKit/Async.html).
 
 ```javascript
 /**
