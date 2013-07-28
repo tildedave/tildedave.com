@@ -21,7 +21,7 @@ Architecture is an answer to the day to day requirements of your application.  I
 
 To the user the important thing about this popover is that it lets them reboot their server through our webapp.  When working on this feature, developers should ideally spend most of their time exposing _reboot_ specific functionality, not _popover_ specific functionality.
 
-We now have over 100 different popovers on the site.  When we began development (two years ago now) we had [`goog.ui.Popup`](http://closure-library.googlecode.com/git/closure/goog/demos/popup.html), which handled placement of the element and hiding when clicking off of it.  It didn't handle markdown, save/cancel buttons, keeping the popover open after clicking save, or displaying errors if the operation failed.  In building the ability to reboot a server, we needed to tackle all these other problems that were marginal to story card ("As a user, I can soft reboot a server.") -- our architecture using `goog.ui.Popup` did not solve the main problem we set out to solve.
+We now have over 100 different popovers on the site.  When we began development (two years ago now) we had [`goog.ui.Popup`](http://closure-library.googlecode.com/git/closure/goog/demos/popup.html), which handled placement of the element and hiding when clicking off of it.  It didn't handle the required markup, save/cancel buttons, keeping the popover open after clicking save, or displaying errors if the operation failed.  In building the ability to reboot a server, we needed to tackle all these other problems that were marginal to story card ("As a user, I can soft reboot a server.") -- our architecture using `goog.ui.Popup` did not solve the main problem we set out to solve.
 
 ## Architecture Must Simplify
 
