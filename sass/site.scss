@@ -13,6 +13,12 @@ code {
   color: #000;
 }
 
+.sidebar {
+  h1 {
+    font-size: ms(0);
+  }
+}
+
 article {
   // Overwrite some Foundation styles within <article> tags so that markdown can work
   // correctly (e.g. specify one # for a header) and not look too ridiculous on the page.
