@@ -43,7 +43,7 @@ In general, I've found it really hard to impart concepts of "goodness" to newer 
 
 ## What Does Duty Get You?
 
-I hope I've convinced you that deontological thinking (process that produced an outcome) is more useful than utilitarian thinking (goodness of results) in a a software development team environment.  I believe thinking about the process will lead to more replicable success than simply chasing good results.
+I hope I've convinced you that deontological thinking (process that produced an outcome) will lead more to replicable success than utilitarian thinking (goodness of results) in a a software development team environment.
 
 I've always believed in process as a key to success and I found these philosophical ideas to be a framework that fit with a lot of my existing professional thinking.  Of course, a software development team is only useful insofar as it produces business outcomes (ultimately, some form of utility).  One of the ideas the Phil 181 lectures introduced was that human society could be seen to operate as a dual moral system: utilitarian in its goals (the design of a progressive tax system), deontological in how it handled individual actions (the operations of the legal system).
 
