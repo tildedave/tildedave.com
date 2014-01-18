@@ -124,7 +124,7 @@ Here's an example log line for the result of a load average check:
 
 > Fri Jan 10 11:48:29 2014 DBG: 50.57.61.12:443 (hostname=agent-endpoint-ord.monitoring.api.rackspacecloud.com connID=34) -> SENDING: (endpoint:44391) => {"target":"endpoint","source":"848592c9-0130-445a-c450-bc764e111acb","id":"44391","params":{"timestamp":1389354509170,"status":"success","state":"available","check_type":"agent.load_average","metrics":[[null,{"15m":{"t":"double","v":"0.27"},"5m":{"t":"double","v":"0.33"},"1m":{"t":"double","v":"0.36"}}]],"check_id":"ch96OT6akx"},"v":"1","method":"check_metrics.post"}
 
-The log line is simply a JSON payload after the `SENDING: (endpoint:44391)` that contains the metrics associated with the `agent.load_average` check.  Using logstash you can extract that to a field with a's `grok` filter, parse it to JSON with a `json` filter, and then reference it in a `statsd` output.  Here's the associated logstash configuration:
+The log line is simply a JSON payload after the `SENDING: (endpoint:44391)` that contains the metrics associated with the `agent.load_average` check.  Using logstash you can extract that to a field with a `grok` filter, parse it to JSON with a `json` filter, and then reference it in a `statsd` output.  Here's the associated logstash configuration:
 
 ```ruby
 input {
