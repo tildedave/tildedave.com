@@ -1,7 +1,8 @@
 source :rubygems
 
-gem 'jekyll', '0.12.0'
-gem 'redcarpet', '2.2.2'
-gem 'zurb-foundation', '3.2.3'
+gem 'jekyll', '~> 1.4.3'
+gem 'foundation'
+gem 'zurb-foundation', '~> 4.3.2'
 gem 'albino', '1.3.3'
 gem 'foreman'
+gem 'compass'
