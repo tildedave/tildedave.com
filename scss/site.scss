@@ -1,0 +1,61 @@
+code {
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.highlight {
+  padding: 0 0 10px 0;
+}
+
+.self-link {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  padding: 10px 0 20px 0;
+}
+
+.sidebar {
+  img {
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: rem-calc(16);
+  }
+}
+
+article {
+
+// Overwrite some Foundation styles within <article> tags so that markdown
+// can work correctly (e.g. specify one # for a header) and not look too
+// ridiculous on the page.
+//
+// It really would be better to fix Jekyll to generate tags with the correct
+// Foundation typography.
+
+  h1 {
+    font-size: rem-calc(27);
+  }
+
+  h2 {
+    font-size: rem-calc(25);
+  }
+
+  h3 {
+    font-size: rem-calc(17);
+  }
+
+  // From ul.disc, couldn't figure out how to include the style
+  ul {
+    list-style-type: disc;
+    margin-left: 17px;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
