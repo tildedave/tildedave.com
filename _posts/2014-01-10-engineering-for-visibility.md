@@ -168,7 +168,7 @@ output {
 }
 ```
 
-While this isn't a perfect solution (it relies on debug output), it lets us get metrics into graphite using our existing monitoring infrastructure rather than using a secondary tool such as [collectd](collectd.org).
+While this isn't a perfect solution (it relies on debug output), it lets us get metrics into graphite using our existing monitoring infrastructure rather than using a secondary tool such as [collectd](http://collectd.org/).
 
 Using the logstash agent for metric collection lets you separate output from the actual implementation.  I'd rather parse metrics from application logs (intended for human consumption) rather than litter the code with manual metric-reporting calls.
 
@@ -196,7 +196,7 @@ On our socket.io servers we process this message by listening on the 'log' topic
 ```javascript
 var winston = require('winston');
 var logger = new (winston.Logger)();
-log.add(winston.transports.Console, {
+logger.add(winston.transports.Console, {
   level: settings.console_loglevel
 });
 
