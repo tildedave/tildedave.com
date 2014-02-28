@@ -1,9 +1,12 @@
-<dl class="sub-nav">
+<div class="row">
 {% if page.previous %}
-  <dd><a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a></dd>
+  <div class="col-xs-4"><a rel="prev" href="{{ page.previous.url }}">&larr; Previous</a></div>
 {% endif %}
-  <dd><a rel="posts" href="/posts.html">All Posts</a></dd>
+  <div class="col-xs-4">
+    <a rel="posts" href="/posts.html">All Posts</a>
+    (<a href="{{ site.rss }}">RSS</a>)
+  </div>
 {% if page.next %}
-  <dd><a rel="next" href="{{ page.next.url }}">Next &rarr;</a></dd>
+  <div class="col-xs-4"><a rel="next" href="{{ page.next.url }}">Next &rarr;</a></div>
 {% endif %}
-</dl>
+</div>

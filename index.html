@@ -14,10 +14,13 @@ layout: default
 
   {% include contact.html %}
 
-  <dl class="sub-nav">
+  <div class="row">
     {% if lastpost.previous %}
-    <dd><a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a></dd>
+    <div class="col-sm-4"><a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a></div>
     {% endif %}
-    <dd><a rel="posts" href="/posts.html">All Posts</a></dd>
-  </dl>
+    <div class="col-sm-4">
+      <a rel="posts" href="/posts.html">All Posts</a>
+      (<a href="{{ site.rss }}">RSS</a>)
+    </div>
+  </div>
 </article>

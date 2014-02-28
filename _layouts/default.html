@@ -7,47 +7,26 @@
   </head>
   <body>
 
-    <div class="body">
-
-      <header class="row">
-        <h2><a href="/" class="self-link">Dave King</a></h2>
-        <h4 class="subheader">
-          Hi, I'm Dave, a software professional living in Blacksburg, VA.  I work for <a href="http://www.rackspace.com">Rackspace</a> as a Team Lead.  I write about software design, thinking techniques, and team processes.
-        </h4>
-      </header>
-
-      <div class="row">
-        <div class="content small-12 large-9 columns">
-          {{ content }}
+    <div class="container">
+      <div class="row intro">
+        <div class="col-md-1 col-md-offset-1">
+          <a href="/">
+            <img src="{{ site.picture }}" alt="A picture of me at a Munich beer garden in 2013." class="img-circle img-responsive intro-picture">
+          </a>
         </div>
-
-        <div class="sidebar large-3 columns">
-          <img src="{{ site.picture }}" alt="A picture of me at a Munich beer garden in 2013.">
-
-          <h4>Who I Am</h4>
-
-          <ul class="disc">
-            <li><a href="/me.html">About Me</a></li>
-            <li class="twitter"><a href="{{ site.twitter }}">@tildedave</a></li>
-            <li class="github"><a href="{{ site.github }}">Github</a></li>
-            <li class="linkedin"><a href="{{ site.linkedin }}">LinkedIn</a></li>
-            <li class="rss"><a href="{{ site.rss }}">RSS Feed</a></li>
-            <li><a href="/posts.html">All Posts</a></li>
-          </ul>
-
-          <h4>Previous Posts</h4>
-
-          <ul class="disc">
-            {% for post in site.posts limit:6 %}
-            {% if forloop.index != 1 %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
+        <div class="col-md-8">
+          <p class="lead">
+            Hi, I'm <a href="/me.html">Dave King</a>, a software professional living in Blacksburg, VA.  I work for <a href="http://www.rackspace.com">Rackspace</a> as a Team Lead.  I write about software design, thinking techniques, and team processes.
+          </p>
         </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          {{ content }}
+        </div>
+      </div>
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
