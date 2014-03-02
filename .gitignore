@@ -4,3 +4,4 @@ _cache
 .sass-cache
 stylesheets/app.css
 stylesheets/site.css
+bower_components/

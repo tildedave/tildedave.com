@@ -1,7 +1,9 @@
 // Jekyll does not generate the right markup
 $font-size-h1: 27px;
 $font-size-h2: 25px;
-$font-size-h3: 17px;
+$font-size-h3: 22px;
+$font-size-base: 16px;
+$headings-font-family: 'Gafata', sans-serif;
 
 @import "variables";
 @import "bootstrap";
