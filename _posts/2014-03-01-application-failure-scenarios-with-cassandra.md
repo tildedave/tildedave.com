@@ -122,7 +122,7 @@ Our workaround here was to re-establish a session on this timeout exception bein
 
 The first table we converted from MySQL was one that handled 'locking out' an account after too many failed logins.  Our MySQL solution was a fairly straightforward relational solution: on a failed attempt, insert a record into a database.  On a login attempt, query the database to determine the number of failed rows -- if the number exceeded a specific threshold, the login would be denied.  This login attempt would be recorded as a failed attempt along and inserted into the database.
 
-A direct translation of this into Cassandra, with a TTL to auto-expire failed login attempts after a 'cooling down period', ran into an issue where a single customer (me, using [`ab`](http://httpd.apache.org/docs/2.2/programs/ab.html), in our test environment) was able to effect a denial of service attack against all logins through creating a large amount of garbage records.  Once the records for these failed logins had expired, all queries to this table started timing out.  The Cassandra logs pointed us to exactly why:
+A direct translation of this into Cassandra, with a TTL to auto-expire failed login attempts after a 'cooling down period', ran into an issue where a single customer (me, using [`ab`](http://httpd.apache.org/docs/2.2/programs/ab.html), in our test environment) was able to effect a denial of service for all logins through creating a large amount of garbage records.  Once the records for these failed logins had expired, all queries to this table started timing out.  The Cassandra logs pointed us to exactly why:
 
 ```
  WARN [ReadStage:99] 2013-12-06 19:42:52,406 SliceQueryFilter.java (line 209) Read 10001 live and 99693 tombstoned cells (see tombstone_warn_threshold)
