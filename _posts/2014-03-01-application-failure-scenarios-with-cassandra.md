@@ -133,7 +133,7 @@ By converting our relational table directly into a Cassandra column family, we i
 
 ### Partial Failures are Worse Than Total Failures
 
-In contrast to bad column family design (something we honestly expected to fail at given our newness with the technology), every other issue we ran into came from our improper management of the `Session` object that handles the connection to Cassandra.
+In contrast to bad column family design (something we honestly expected to fail at given our newness with the technology), the last set of issues we ran into were due to improper management of the `Session` object that handles the connection to Cassandra.
 
 Creating a `Session` object requires the application node to communicate with the Cassandra cluster to determine which nodes are up and which are down.  On average creating this session took 1 second; sometimes spiking up to 4 seconds; in contrast, once a session has been created, our most common database queries finish in less than 10ms.  That's a difference factor of *100*.
 
@@ -141,7 +141,7 @@ Creating a `Session` object requires the application node to communicate with th
 
 ![Preference Read Time](http://static.davehking.com/2014-03-01-preference-read-timing.png)
 
-Because of this time disparity, the reuse of the `Session` between different requests is key to a performant application.  Our Django servers run on Apache through `mod_wsgi`: each WSGI process reuses one Cassandra `Session`.  We use the `maximum-requests` setting which eventually kills each WSGI process after a certain number of threads, creating a new one.  This new process create its own `Session` object and uses it for its lifetime.  (In contrast, our Twisted servers are single-threaded and create one `Session` that is used throughout the lifetime of the process -- generally, until it is restarted as part of our code deploy process).
+Because of this time disparity, the reuse of the `Session` between different requests is key to a performant application.  Our Django servers run on Apache through `mod_wsgi`: each WSGI process reuses one Cassandra `Session`.  We use the `maximum-requests` setting which eventually kills each WSGI process after a certain number of threads, creating a new one.  This new process creates its own `Session` object and uses it for its lifetime.  (In contrast, our Twisted servers are single-threaded and create one `Session` that is used throughout the lifetime of the process -- generally, until it is restarted as part of our code deploy process).
 
 Just as our Cassandra nodes sometimes lost private network connectivity (bringing down the `rpc_address` while keeing the `listen_address` up), our application nodes also sometimes experienced failures in private network connectivity.  In this case, every host in a `mod_wsgi` process's `Session` object would become marked down, eventually [terminating the event loop](https://github.com/datastax/python-driver/blob/95ced181a18c90c90bc155cb78c8fe3c5b2c8ffe/cassandra/io/libevreactor.py#L52) for the control connection.  This meant that every subsequent query with this Session would fail with a `NoHostAvailable` exception; the `Session` object will never recover and needs to be recreated.
 
