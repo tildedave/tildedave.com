@@ -1,0 +1,21 @@
+{
+  "name": "davehking.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tildedave/davehking.com",
+  "authors": [
+    "Dave King <dave.king@rackspace.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery-backstretch": "~2.0.4"
+  }
+}
