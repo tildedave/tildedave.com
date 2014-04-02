@@ -5,3 +5,5 @@ gem 'albino', '1.3.3'
 gem 'bootstrap-sass'
 gem 'foreman'
 gem 'compass'
+gem 'jekyll-image_resizer'
+
