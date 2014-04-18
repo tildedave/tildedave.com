@@ -18,7 +18,3 @@ In his free time Dave enjoys outdoor activites that involve long hours of gruell
 # About This Site
 
 This site is built using [Jekyll](https://github.com/mojombo/jekyll) and [Bootstrap](http://getbootstrap.com/), deployed using [Chef](http://www.opscode.com/chef/), and hosted on a [Rackspace Cloud Server](http://www.rackspace.com/cloud/).
-
-</article>
-
-
