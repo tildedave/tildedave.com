@@ -12,7 +12,7 @@ As a contractor for inRoll, Inc., he was one of two team members responsible for
 Away from the computer Dave enjoys outdoor activites that involve long hours of gruelling exertion: running up hills, hiking, and road biking.
 
 <center>
-[{{ 'http://static.davehking.com/me-hellclimb-1.jpg' | img:'style="width: 500px;" class="img-rounded"' }}]()
+[{{ 'http://static.davehking.com/me-hellclimb-1.jpg' | img:'class="img-rounded img-responsive"' }}]()
 </center>
 
 # About This Site
