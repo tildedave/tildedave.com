@@ -72,7 +72,7 @@ First off, [different hypervisors support different actions](https://wiki.openst
 
 Additionally, certain operations are only possible in a certain state.  An `ACTIVE` instance can be [suspended](http://docs.openstack.org/api/openstack-compute/2/content/POST_os-admin-actions-v2_suspend_v2__tenant_id__servers__server_id__action_ext-action.html), putting it into `SUSPENDED` state.  Once `SUSPENDED`, it can be [resumed](http://docs.openstack.org/api/openstack-compute/2/content/POST_os-admin-actions-v2_resume_v2__tenant_id__servers__server_id__action_ext-action.html).  All of these operations are managed through sending different methods to the `/action` URI.  The [OpenStack documentation](https://github.com/openstack/nova/blob/grizzly-2/doc/source/images/PowerStates2.png) contains complicated logic that clients need to adhere to in order to know which actions are possible in which VM state.
 
-[{{ 'http://static.davehking.com/openstack-vm-transitions.png' | img:'style="width: 750px;"' }}](http://docs.openstack.org/developer/nova/devref/vmstates.html)
+[{{ 'http://static.davehking.com/openstack-vm-transitions.png' | img:'class="img-responsive"' }}](http://docs.openstack.org/developer/nova/devref/vmstates.html)
 
 The `/action` URI requires that clients code these state transitions into their own behavior, or else requests will fail and need to be made at a different time.  After issuing a password reset, the client must wait for the instance to enter the instance to enter the `set_admin_password` task state, then wait for it to go back into `ACTIVE`.  This logic needs to be coded differently for every action that could possibly be initiated against an instance.
 

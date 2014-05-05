@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'putStrLn "hello, world"'
-
 ---
 
 I am going to attempt to write down longer thoughts specific to programming in the enterprise and whatever comes my way in part-time hacking.
