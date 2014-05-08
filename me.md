@@ -12,9 +12,9 @@ As a contractor for inRoll, Inc., he was one of two team members responsible for
 Away from the computer Dave enjoys outdoor activites that involve long hours of gruelling exertion: running up hills, hiking, and road biking.
 
 <center>
-[{{ 'http://static.davehking.com/me-hellclimb-1.jpg' | img:'class="img-rounded img-responsive"' }}]()
+[{{ 'http://static.davehking.com/me-blueridgehalf.jpg' | img:'class="img-rounded img-responsive"' }}]()
 </center>
 
 # About This Site
 
-This site is built using [Jekyll](https://github.com/mojombo/jekyll) and [Bootstrap](http://getbootstrap.com/), deployed using [Chef](http://www.opscode.com/chef/), and hosted on a [Rackspace Cloud Server](http://www.rackspace.com/cloud/).
+This site is built using [Jekyll](https://github.com/mojombo/jekyll) and [Bootstrap](http://getbootstrap.com/), deployed using [Chef](http://www.opscode.com/chef/) and [Docker](https://docker.io), and hosted on a [Rackspace Cloud Server](http://www.rackspace.com/cloud/).
