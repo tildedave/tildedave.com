@@ -11,6 +11,8 @@ As a contractor for inRoll, Inc., he was one of two team members responsible for
 
 Away from the computer Dave enjoys outdoor activites that involve long hours of gruelling exertion: running up hills, hiking, and road biking.
 
+[Resume](/resume.html)
+
 <center>
 [{{ 'http://static.davehking.com/me-blueridgehalf.jpg' | img:'class="img-rounded img-responsive"' }}]()
 </center>
