@@ -9,7 +9,7 @@ Dave King is a software professional currently based out of Blacksburg, VA.  He 
 
 As a contractor for inRoll, Inc., he was one of two team members responsible for the 2012 Success Academics Charter School Lottery, processing the application of 30,000+ students.  He has worked on the Rackspace Cloud Control Panel as a senior developer and team lead since 2011.  He has lead multiple technical events in the New River Valley, most recently a Let's Code Blacksburg! course "Building Websites With Bootstrap".
 
-Away from the computer Dave enjoys outdoor activites that involve long hours of gruelling exertion: running up hills, hiking, and road biking.
+Away from the computer Dave enjoys outdoor activities that involve long hours of grueling exertion: running up hills, hiking, and road biking.
 
 [Resume](/resume.html)
 
