@@ -3,6 +3,14 @@ layout: post
 title: Reverting a Pull Request on Github
 ---
 
+**Update (06/25/2014)**: Github has built this into their [web UI](https://github.com/blog/1857-introducing-the-revert-button)!
+
+[![](https://camo.githubusercontent.com/0d3350caf2bb1cba53123ffeafc00ca702b1b164/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f68656c702f70756c6c5f72657175657374732f7265766572742d70756c6c2d726571756573742d6c696e6b2e706e67)](https://github.com/blog/1857-introducing-the-revert-button))
+
+You don't need to follow these steps any more.  However, if you want to learn the git-fu that lets you do it yourself -- go ahead!
+
+<hr>
+
 My team uses [Git](http://git-scm.com) and [Github](http://github.com)
 for all its development.  This means I probably spend 1-2 hours a day
 interacting with the Github website, making comments on pull requests,
