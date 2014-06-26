@@ -5,7 +5,7 @@ title: 'Things We Learned From Root Cause Analysis'
 
 My project has gone from being a green-field (e.g. not released to customers) project to being used for thousands of users a day.  During that time we've kept track of almost every production failure through _root cause analysis_.  Root cause analysis, e.g. learning through failure, has been our main learning tool in changing our process to avoid customers outages.
 
-I've gone through the last two and a half years of root cause analysis as stored on our wiki and pulled out the mosst salient learnings.  Embarassingly several of these themes have multiple incidents assigned to them, meaning that we clearly didn't learn the right lessons the first time!
+I've gone through the last two and a half years of root cause analysis as stored on our wiki and pulled out the most salient learnings.  Embarassingly several of these themes have multiple incidents assigned to them, meaning that we clearly didn't learn the right lessons the first time!
 
 ## Production and Preproduction Should Be The Same
 
@@ -29,7 +29,7 @@ By volume, the bulk of our features are where where we have broken a specific pr
 
 Because of this I have come to feel that missing tests are one of the least interesting parts of a failure.  Yes, in certain situations a test was missing and needed to be written.  Yes, in certain situations a test failed and we deployed to production anyways.  Of course testing is important; we don't need a failure to convince us of that.  If you think testing is important and you assign lack of testing as the root cause to every production failure, you limit its value by letting it confirm your pre-existing biases.
 
-To make sure we think about all aspects of a failure, we use a thinking framework adapted from a [wonderful breakdown of a storage disruption on Windows Azure]([http://azure.microsoft.com/blog/2013/03/01/details-of-the-february-22nd-2013-windows-azure-storage-disruption/]).  In the article, the Azure storage team highlights four parts of a customer-facing incident:
+To make sure we think about all aspects of a failure, we use a thinking framework adapted from a [wonderful breakdown of a storage disruption on Windows Azure](http://azure.microsoft.com/blog/2013/03/01/details-of-the-february-22nd-2013-windows-azure-storage-disruption/).  In the article, the Azure storage team highlights four parts of a customer-facing incident:
 
 > To learn as much as we can, we do a root cause analysis and analyze all aspects of the incident to improve the reliability of our platform for our customers.  This analysis is organized into four major areas, looking at each part of the incident lifecycle as well as the engineering process that preceded it:
 >
