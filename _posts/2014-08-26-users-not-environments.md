@@ -7,7 +7,7 @@ In a service-oriented architecture multiple product teams work together towards 
 
 With this setup, an entire project only moves as quickly as the slowest team.  This makes it important for teams to utilize software delivery practices that encourage speed.  However, some software teams operate on a "Scrum" delivery model, where a team will work on a set of stories for an iteration (2-4 weeks) between deployments.  The way I've seen this work is that code is initially pushed to an _integration environment_ ("staging") - a segmented service that does not operate on customer data.
 
-{{ 'http://static.davehking.com/2014-08-26-testing-with-an-integration-environment.png' | img:'class="img-responsive"' }}
+{{ 'https://c417313.ssl.cf1.rackcdn.com/2014-08-26-testing-with-an-integration-environment.png' | img:'class="img-responsive"' }}
 
 There are several antipatterns with this setup that I will explore in this article.  I believe that delivery to an integration environment on a two-week cadence is simply _not good enough_ to support larger-scale development.  If you're looking to organize development across multiple teams, your goal should be fast delivery to a production or production-quality environment.
 
@@ -104,7 +104,7 @@ With a frequent delivery cadence, your testing strategy changes.  Rather than tr
 
 In the following diagram Service A and Service B maintain their own test environments which exist in production and is the first place where new versions of their code go.  To validate "cool feature", the frontend team for service A tests with a few test users that the feature flag enabled, consuming the production version of service B.  To validate "neat feature" before releasing in production, service B ensures that all new releases stick to API contracts and that business logic lives in the service (rather than the consumer).  This combination of factors allows the service to change independently from its consumers.
 
-{{ 'http://static.davehking.com/2014-08-26-testing-with-feature-flags.png' | img:'class="img-responsive"' }}
+{{ 'https://c417313.ssl.cf1.rackcdn.com/2014-08-26-testing-with-feature-flags.png' | img:'class="img-responsive"' }}
 
 Of course, you still can't have developers do boneheaded things in production -- they can't have permission to wipe out production data.  By taking "test on accounts in production" as an end goal, you optimize for the common case - most small changes will be safe an harmless - rather than the uncommon case - a change that breaks everything and causes customer impact.  Choosing developing and testing in production as an end goal does not mean you are any less serious about ensuring customer safety -- it just means that you need to take alternative steps to getting there than total isolation.
 
