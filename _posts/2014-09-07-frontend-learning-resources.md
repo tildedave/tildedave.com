@@ -3,7 +3,7 @@ layout: post
 title: 'Frontend Learning Resources'
 ---
 
-So I am starting a new job on Monday with [Tilt](https://tilt.com) as a Frontend Engineer.  In the process of doing this I've been reacquainting myself with the frontend landscape.  In talking with a friend I realized that there is a lot of things to learn and maybe not a lot of guidance.  This is my attempt to compile a set of learning resources that either I found helpful or that I think I would find helpful for someone who was just beginning frontend development from a predominantly server-side role.
+So I am starting a new job on Monday with [Tilt](https://tilt.com) as a Frontend Engineer.  In the process of doing this I've been reacquainting myself with the frontend landscape.  In talking with a friend I realized that there are many things to learn and maybe not a lot of guidance.  This is my attempt to compile a set of learning resources that either I found helpful or that I think I would find helpful for someone who was just beginning frontend development from a predominantly server-side role.
 
 This is intentionally uncomplete.  Frontend is a rapidly changing landscape and I have been focused on other things (that are also wonderful) for the last few years.  I understand Angular at a high-to-medium level but haven't dug in enough to consider myself proficient.  I need to take time to evaluate Ember as it seems very good from a distance.  So I am still learning too.
 
@@ -31,7 +31,7 @@ The only book on JavaScript that I would recommend.  It focuses on programming i
 
 [Vanilla.js](http://vanilla-js.com/) and [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
 
-Web development today is different from it was in the past - it used to focus on browser compatibility and wrapping the DOM into a uniform information.  (I think this is a fair statement: I was not doing frontend development in the days of the IE6 box model hack.)  With modern browsers that auto-update, our attitude towards jQuery and polyfills should be re-evaluated given the current state of browser development.  Sites that challenge the dominance of jQuery are important for this and whether or not you agree with the conclusion you should be aware of what is provided by jQuery and what is provided by the DOM.
+Web development today is different from it was in the past - it used to focus on browser compatibility and wrapping the DOM into a uniform interface.  (I think this is a fair statement: I was not doing frontend development in the days of the IE6 box model hack.)  With modern browsers that auto-update, our attitude towards jQuery and polyfills should be re-evaluated given the current state of browser development.  Sites that challenge the dominance of jQuery are important for this and whether or not you agree with the conclusion you should be aware of what is provided by jQuery and what is provided by the DOM.
 
 [Flight](https://github.com/flightjs/flight)
 
@@ -39,7 +39,7 @@ Lightweight JavaScript component library from Twitter.
 
 [Promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
 
-Promises are a pretty key thing to know for modern JavaScript.  CPS-style chaining of callbacks might have been okay three years ago but jQuery and other libraries (e.g. Angular) are all starting to introduce some sort of promise-like interface.  In a single-threaded computation model asynchronous interfaces need to have a promise-like model to avoid becoming callback hell.  That said, promises do not avoid callback hell in themselves as they still encourage an innately procedural style of thinking.  However, they are an easily composable building block that can be used to build high-level abstractions, whereas handling interleaving callbacks while still handling error scenarios can be quite challenging.  You do handle your errors, right?
+Promises are a pretty key thing to know for modern JavaScript.  CPS-style chaining of callbacks might have been okay three years ago but jQuery and other libraries (e.g. Angular) are all starting to introduce some sort of promise-like interface.  In a single-threaded computation model asynchronous interfaces need to have a promise-like model to avoid becoming callback hell.  That said, promises do not avoid callback hell in themselves as they still encourage an innately procedural style of thinking.  However, they are an easily composable building block that can be used to build high-level abstractions, whereas handling interleaving callbacks that may result in error scenarios can be quite challenging.  You do handle your errors, right?
 
 ## Bigger Ideas About Application Structure
 
