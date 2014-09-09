@@ -5,27 +5,25 @@
     <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css"></link>
     <link href='https://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
-    <script src="/bower_components/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="/bower_components/jquery-backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
+    <meta name="description" content="{{ page.content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
   </head>
   <body>
-
     <div class="container">
       <div class="row intro">
-        <div class="col-xs-2 col-md-1 col-md-offset-1">
+        <div class="hidden-xs col-sm-2">
           <a href="/">
-            <img src="{{ site.picture }}" alt="A picture of me teaching a Let's Code Blacksburg class." class="img-circle img-responsive intro-picture">
+            <img src="{{ site.picture }}" alt="A picture of me with some severe autostitch injuries">
           </a>
         </div>
-        <div class="col-xs-8">
+        <div class="hidden-xs col-sm-10">
           <p class="lead">
-            Hi, I'm <a href="/me.html">Dave King</a>, a software professional living in Blacksburg, VA.  I write about software design, thinking techniques, and team processes.
+            Hi, I'm <a href="/me.html">Dave King</a>, a software professional living in Oakland, CA.  I work for <a href="https://www.tilt.com">Tilt</a> as a Frontend Engineer.  I write about software design, thinking techniques, and team processes.
           </p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
           {{ content }}
         </div>
       </div>
@@ -41,8 +39,6 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
-      $.backstretch("{{ site.background }}");
     </script>
   </body>
 </html>

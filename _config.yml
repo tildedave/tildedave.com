@@ -8,14 +8,13 @@ redcarpet:
 gems: ['jekyll-image_resizer']
 
 
-picture:        "https://c417313.ssl.cf1.rackcdn.com/me-bootstrap-talk.png"
+picture:        "https://c417313.ssl.cf1.rackcdn.com/me-autostitch-casualty.jpg"
 twitter:        "https://twitter.com/tildedave"
 github:         "https://github.com/tildedave"
 linkedin:       "http://www.linkedin.com/pub/dave-king/29/ba1/734"
 email:          "tildedave_at_gmail_dot_com"
 rss:            "/feed.xml"
 
-name:           davehking.com
-description:    Dave King blogs about software patterns, functional programming, and testing.
-url:            http://www.davehking.com
-background:     https://c417313.ssl.cf1.rackcdn.com/austria-lake.jpg
+name:           tildedave.com
+description:    Dave King blogs about software design, thinking techniques, and team processes.
+url:            http://www.tildedave.com
