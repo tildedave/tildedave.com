@@ -4,8 +4,14 @@
     <title>{{ page.title }}</title>
     <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css"></link>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}"></link>
     <link href='https://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    {% if page.url == "/index.html" %}
+    <meta name="description" content="Dave King is a software professional living in Oakland, CA.  He writes about software design, thinking techniques, and team processes.">
+    {% else %}
     <meta name="description" content="{{ page.content | strip_html | truncatewords: 200 | strip_newlines | escape_once }}" />
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="container">
