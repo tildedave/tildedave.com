@@ -103,7 +103,7 @@ This may be just an useless cry of rage but I don't feel like I should have to i
 
 I think I understand why people like Gulp - frontend builds all kind of look the same if you squint at them.  Build JS, build CSS, concatenate, minify, upload to CDN, all with various options that are project specific.  Because of this it's easy to find something that kind of works online, adapt it to your needs, and slowly add onto it with extra plugins.
 
-So if you're not using Gulp what are you using isntead?  Maybe this is the hipster answer but _just use shell scripts_.
+So if you're not using Gulp what are you using instead?  Maybe this is the hipster answer but _just use shell scripts_.
 
 * Use command line utilities without relying on wrapper plugins
 * Full power of the UNIX command line - yes this isn't "just JavaScript" and it's definitely not code over configuration but these tools have been battle-tested for decades.  The knowledge you gain from putting your build into a shell script will help you be a more effective programmer.
