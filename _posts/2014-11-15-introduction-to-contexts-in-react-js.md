@@ -3,6 +3,7 @@ layout: post
 title: 'Introduction to Contexts in React.js'
 ---
 
+
 [Contexts](https://facebook.github.io/react/blog/2014/03/28/the-road-to-1.0.html#context) are a feature that will eventually be released in React.js - however, they exist today in an undocumented form.  I spent an afternoon looking into the present implementation and was frustrated by the lack of documentation (justified, as it is a changing feature).  I've pieced together a few code examples that I found helpful.
 
 In React.js a context is a set of attributes that are implicitly passed down from an element to all of its children and grandchildren.
@@ -10,6 +11,9 @@ In React.js a context is a set of attributes that are implicitly passed down fro
 Why would you use a context rather than explicitly passing properties down to child elements?  There are a few different reasons.  You may be building a widget with a large child tree where child elements have the ability to drastically affect the widget's overall state.  If you're not using the Flux pattern (where the parent widget listens to Stores that are affected by Action Creators invoked by the child elements), the idiomatic way to do this is to pass callbacks that affect the overall widget through `props` - this can be a bit awkward when you are passing a callback down several levels.
 
 Another situation where contexts are useful is where you are doing server-side rendering - in this case data comes in that is uniquely associated with the user (e.g. session information).  If your elements require session information this needs to be passed down from parent to child which gets inelegant very quickly.
+
+
+**Update (2/19/2015):** `React.withContext` is [deprecated](https://github.com/facebook/react/blob/a411f3e0dcac3cada4ce0acf6603bbb8ff7024a6/src/core/ReactContext.js#L54) as of React 0.13-alpha.  You should investigate `getChildContext` with a wrapper component for future-facing code.  Contexts themselves are not going away - they are [planned for React 1.0]((https://facebook.github.io/react/blog/2014/03/28/the-road-to-1.0.html#context) and at ReactConf 2015 the React team [confirmed](https://www.youtube.com/watch?v=EPpkboSKvPI&feature=youtu.be&t=8m50s) that the context feature was staying, with some cool examples of how contexts have been used in the past.
 
 ## React.withContext
 
