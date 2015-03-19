@@ -218,4 +218,4 @@ I've extracted the key concepts from this post into a standalone repository that
 
 Finally, if you're on your laptop, you can check out "Homepage Feed" experiment at tilt.com by following [this link](https://www.tilt.com/?tilt-experiment=homepage-feed)!  (Because of the lack of horizontal space, the mobile homepage looks about the same when the experiment is on or off.)
 
-_This was also posted to the [Tilt Engineering Blog](http://engineering.tilt.com/).  Thanks to Will Wolf who helped me with many edits that greatly improved._
+_This was also posted to the [Tilt Engineering Blog](http://engineering.tilt.com/).  Thanks to Will Wolf who helped me with many edits that greatly improved the clarity of my writing._
