@@ -8,6 +8,7 @@ About six months ago, Tilt Engineering switched from technology-focused teams to
 Here, I'll focus on one particular problem - making technical changes that require the buy-in of a whole technology group.  These are drastic changes in the codebase - introducing a new framework, switching your ORM, adding a new type of database, adding a new level of automated testing.  I see leader technical changes across a codebase as one of the key responsibilities of a senior developer, and I've led several of these in my career.  (The [data loading infrastructure](https://www.tildedave.com/2013/06/20/large-scale-client-side-data-loading.html) we built on the Rackspace Cloud Control Panel stands out as probably both the most work and having had the most overall benefit for the product.)
 
 My model for leading technical change is:
+
 * have an idea
 * anticipate resistance
 * come with code
