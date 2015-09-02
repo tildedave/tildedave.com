@@ -7,6 +7,10 @@ task :build do |t|
   sh "jekyll build"
 end
 
+task :upload => [:build] do
+  sh  "aws s3 sync _site/ s3://tildedave-com"
+end
+
 task :install => [:build] do |t|
   sh "cp -r _site/* /var/www/html"
 end
