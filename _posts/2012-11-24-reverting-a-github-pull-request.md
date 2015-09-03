@@ -38,7 +38,7 @@ This following advice will not work if you do not use the Github green
 button to merge your pull requests.  To make everything easier, you
 should *always* use the green button!
 
-![Always use the Green Button](https://cf20dfa9de7f7946bd69-5bacf07e656cc7aa4e329c53d85b13e0.ssl.cf1.rackcdn.com/2012-11-24-always-use-the-green-button.png)
+![Always use the Green Button](/images/2012-11-24-always-use-the-green-button.png)
 
 ## Step 2: Revert the Pull Request
 
@@ -46,7 +46,7 @@ To revert a pull request, the first thing you need to do is find the
 merge commit that the green button created.  It's highlighted in the
 following picture:
 
-![Find the Merge Commit](https://cf20dfa9de7f7946bd69-5bacf07e656cc7aa4e329c53d85b13e0.ssl.cf1.rackcdn.com/2012-11-24-find-the-merge-commit.png)
+![Find the Merge Commit](/images/2012-11-24-find-the-merge-commit.png)
 
 Here the hash `6912d584f1` is the _merge commit_: it records that the
 branch `tildedave/pull_request_demo` was merged into master from Pull
@@ -77,7 +77,7 @@ The next step is to merge your branch that reverts the pull request.
 Like every other change to `master`, this should be done through
 Github with the green button.
 
-![Pull Request for the Revert](https://cf20dfa9de7f7946bd69-5bacf07e656cc7aa4e329c53d85b13e0.ssl.cf1.rackcdn.com/2012-11-24-pull-request-for-the-revert.png)
+![Pull Request for the Revert](/images/2012-11-24-pull-request-for-the-revert.png)
 
 Once this has been merged, the original pull request has been reverted.
 
@@ -91,7 +91,7 @@ The revert hash was given in the command results above, but you can
 also find it through Github by looking at the commit right before your
 merged revert pull request.
 
-![Find the Revert Hash](https://cf20dfa9de7f7946bd69-5bacf07e656cc7aa4e329c53d85b13e0.ssl.cf1.rackcdn.com/2012-11-24-find-the-revert-hash.png)
+![Find the Revert Hash](/images/2012-11-24-find-the-revert-hash.png)
 
 Now that we have the revert hash, we can make a new branch and revert
 the revert, then add additional commits to fix whatever was wrong with
@@ -108,7 +108,7 @@ Finished one revert.
  create mode 100644 this-is-also-a-test-file
 ```
 
-![Make a Branch to Fix the Reverted Pull Request](https://cf20dfa9de7f7946bd69-5bacf07e656cc7aa4e329c53d85b13e0.ssl.cf1.rackcdn.com/2012-11-24-pull-request-for-fix-of-reverted-pull-request.png)
+![Make a Branch to Fix the Reverted Pull Request](/images/2012-11-24-pull-request-for-fix-of-reverted-pull-request.png)
 
 ## What if bad code is already in production?
 
