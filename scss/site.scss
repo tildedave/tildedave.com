@@ -2,6 +2,7 @@ body {
   // https://css-tricks.com/snippets/css/better-helvetica/
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 
 .self-link {
@@ -12,6 +13,20 @@ body {
 .intro {
   padding-top: 10px;
   color: #999;
+
+  & > * {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .lead {
+    margin-bottom: 0;
+  }
+
+  .col-sm-10 {
+    margin-left: -10px;
+  }
 }
 
 article img {
