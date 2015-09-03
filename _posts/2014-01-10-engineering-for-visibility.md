@@ -23,7 +23,7 @@ The first entry is the name of the metric, the second is the value (15), the thi
 
 The metrics get aggregated over a time range and rendered into an image by Graphite.  Here's a graph of the status codes that our Apache loadbalancer machines serve in production:
 
-![Graphite Stats](http://static.davehking.com/2014-01-18-graphite-apache-stats.png)
+![Graphite Stats](/images/2014-01-18-graphite-apache-stats.png)
 
 The default Graphite dashboard (a Django app) is a little unfriendly and in my opinion makes it relatively hard to create new graphs and edit existing ones.  To improve this, my team uses a [Graphiti](https://github.com/paperlesspost/graphiti) install, an alternate Graphite frontend from [Paperless Post](http://www.paperlesspost.com/).  The above graph is specified through a JSON definition (most of the cosmetic options are provided by default):
 
@@ -219,7 +219,7 @@ This lets us understand what the customer experience is -- for example, if a cus
 
 We ship metrics to socket.io in a similar fashion by providing events for counters and timers, which are then sent into Graphite through the `statsd` daemon running on the socket.io server.  Last week we launched the ability for users to localize the times that they see in the portal and defaulted users to a time zone based on their browser setting, e.g. if you're in New York, you see New York time.  This setting can be through by changing a widget on the Account Settings page, and one of our developers set up a graph to show how often this happened.
 
-![Time Zone Changes](http://static.davehking.com/2014-01-18-timezone-changes.png)
+![Time Zone Changes](/images/2014-01-18-timezone-changes.png)
 
 ## What About Custom Dashboards?
 

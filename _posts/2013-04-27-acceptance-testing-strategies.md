@@ -64,7 +64,7 @@ The way we enforce this on our team is that once code is merged, a set of known 
 
 Ideally every test runs and passes every time.  In practice this isn't always the case for a lot of reasons that I'll get into further down.  If a test fails, manual intervention is required: team members can override a failure by manually forcing a Jenkins job "Production_Deploy_OK".  Generally if any test fails, it is rerun.  While we have usually have more manual overrides than automatic runs of our "Production_Deploy_OK" jobs, all test suites run in under 10 minutes, making reruns generally not too onerous.
 
-![](http://static.davehking.com/2013-04-27-acceptance-test-pipeline.png)
+![](/images/2013-04-27-acceptance-test-pipeline.png)
 
 By forcing manual intervention we ensure that the default state of these tests are passing, and if a suite starts to behave poorly we will remove it from the set of 'blocking' tests and create a defect to investigate and fix it.
 

@@ -241,6 +241,6 @@ All of these problem domains deal with the same underlying fundamental problem: 
 
 A solid understanding of these fundamental concepts will let you switch between stacks more than any new technology.  The newest "hot topics" are very frequently really just the old concepts with a new name.
 
-![](http://static.davehking.com/2013-06-12-plt-hulk-tweet.png)
+![](/images/2013-06-12-plt-hulk-tweet.png)
 
-_I recently gave an introductory tech talk on this topic at the Rackspace Blacksburg office: [Event Loops and Deferreds](http://static.davehking.com/event-loops-and-deferreds.pdf)._
+_I recently gave an introductory tech talk on this topic at the Rackspace Blacksburg office: [Event Loops and Deferreds](/talks/event-loops-and-deferreds.pdf)._

@@ -17,7 +17,7 @@ In constrast, we faced unique problems in _loading data_ from our model layer in
 
 Data Loading is the process by which data makes it from the model layer to the view layer.  Depending on which flavor of MV* you prefer this is done differently but the problem is a general one and not dependent on application structure.  Application views potentially need data from multiple upstream APIs.  If a resource is not available, a view should display a partial or total error state.  Data displayed in a view should be updated invisibly in the background on a set interval that is potentially different for each type of resource.
 
-![The Problem of Data Loading](http://static.davehking.com/2013-06-20-data-loading.png)
+![The Problem of Data Loading](/images/2013-06-20-data-loading.png)
 
 The Open Cloud Control Panel is built on [REST APIs](http://docs.rackspace.com/); the same APIs that Rackspace customers are able to programmatically access through `curl`, Rackspace SDKs, or multi-cloud SDKs such as [jclouds](https://github.com/jclouds/jclouds), [libcloud](http://libcloud.apache.org/), and [fog](http://fog.io/).  All of this data is associated with a specific upstream API.  Certain resource types have data available in multiple regions.  For example, the Servers API is a multi-region API with different resources between Dallas, Chicago, London, and Sydney endpoints; each of these has servers (virtualized compute instances), images (snapshots of a machine that can be turned into a running instance on demand), and flavors (a list of server configuration presets such as RAM and Disk).  In contrast the Cloud DNS API is a global API with only one region and only one top-level resource.
 
@@ -85,7 +85,7 @@ Our main approach to a data loading interface was extending our view's _lifecycl
 
 To handle data loading as part of view lifecycle, we wrote a `ViewComponent` class, a subclass of `goog.ui.Component`, with two new lifecycle function.  Dependencies for data loading are declared in `enterDocument`.  The `onLoaded` function is called when data was ready to be displayed by the view, while the `onError` function is called if some of the requested data failed to load.
 
-![View Component Lifecycle](http://static.davehking.com/2013-06-20-view-component-lifecycle.png)
+![View Component Lifecycle](/images/2013-06-20-view-component-lifecycle.png)
 
 # Resources and Addresses
 
@@ -124,7 +124,7 @@ Before we added this level of indirection, all of our JavaScript classes had a `
 
 The ViewComponent accesses the hierarchy of aggregate services, services, and the resources that they contain through the `ServiceRegistry` class.
 
-![Service Registry](http://static.davehking.com/2013-06-20-service-registry.png)
+![Service Registry](/images/2013-06-20-service-registry.png)
 
 # Forcing Resource Load with Deferreds
 
@@ -271,7 +271,7 @@ However, if a resource fails to load, custom `onError` logic determines whether 
 
 # Updating Resources
 
-![Polling Orchestrator](http://static.davehking.com/2013-06-20-polling-orchestrator.png)
+![Polling Orchestrator](/images/2013-06-20-polling-orchestrator.png)
 
 Once a resource is displayed on the page, we update it on a certain interval as long as it is user visible. The `PollingOrchestrator` class keeps track of the resources requested by every displayed view.  As long as a resource is displayed, it is updated on a timer in the background.  Because all `ViewComponent` subclasses register which resources are required and are being displayed through their `addDependency` calls, this happens invisibly without writing any extra code.
 
@@ -281,7 +281,7 @@ We instrumented our Updater classes not to trigger the next update when the page
 
 # Conclusion
 
-![Final Data Loading Architecture](http://static.davehking.com/2013-06-20-data-loading-architecture.png)
+![Final Data Loading Architecture](/images/2013-06-20-data-loading-architecture.png)
 
 Data loading was (and still is) a challenging problem in our application.  Over the last two years we had long discussions as a team about the best way to get data into our views.  Concepts like aggregate resources initially had amazingly complicated solutions.  Each application did data loading a little differently, meaning that if you went from the Cloud Servers application to the Cloud Load Balancer application, you might see a set of similar but subtly different (in dangerous ways!) code patterns.  We started by storing data in our views, but needed to stop that when there were too many different kinds of resources.  We then moved to "god" objects that would be passed between views and store both regional and aggregate collections -- the foundation of the existing "service" concept today.  This ran into a number other problems and we had to back out this pattern quickly after it was implemented.  Throughout it all polling was a persistent pain, requiring custom logic that was either instrumented on the app level or in an individual view.
 

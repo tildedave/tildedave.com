@@ -137,9 +137,9 @@ In contrast to bad column family design (something we honestly expected to fail 
 
 Creating a `Session` object requires the application node to communicate with the Cassandra cluster to determine which nodes are up and which are down.  On average creating this session took 1 second; sometimes spiking up to 4 seconds; in contrast, once a session has been created, our most common database queries finish in less than 10ms.  That's a difference factor of *100*.
 
-![Graphite Stats](http://static.davehking.com/2014-03-01-session-create-time-mean.png)
+![Graphite Stats](/images/2014-03-01-session-create-time-mean.png)
 
-![Preference Read Time](http://static.davehking.com/2014-03-01-preference-read-timing.png)
+![Preference Read Time](/images/2014-03-01-preference-read-timing.png)
 
 Because of this time disparity, the reuse of the `Session` between different requests is key to a performant application.  Our Django servers run on Apache through `mod_wsgi`: each WSGI process reuses one Cassandra `Session`.  We use the `maximum-requests` setting which eventually kills each WSGI process after a certain number of threads, creating a new one.  This new process creates its own `Session` object and uses it for its lifetime.  (In contrast, our Twisted servers are single-threaded and create one `Session` that is used throughout the lifetime of the process -- generally, until it is restarted as part of our code deploy process).
 

@@ -17,7 +17,7 @@ Here are some criteria that I've use to understand whether or not a particular a
 
 Architecture is an answer to the day to day requirements of your application.  It should answer the questions of incoming work.  One of the key patterns in the Cloud Control Panel is the popover.
 
-![](http://static.davehking.com/2013-07-27-popover.png)
+![](/images/2013-07-27-popover.png)
 
 To the user the important thing about this popover is that it lets them reboot their server through our webapp.  When working on this feature, developers should ideally spend most of their time exposing _reboot_ specific functionality, not _popover_ specific functionality.
 

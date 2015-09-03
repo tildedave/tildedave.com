@@ -1,9 +1,9 @@
 // Jekyll does not generate the right markup
-$font-size-h1: 27px;
-$font-size-h2: 25px;
-$font-size-h3: 22px;
+// TODO figure out how to make Bootstrap build scale things down
+$font-size-h1: 24px;
+$font-size-h2: 20px;
+$font-size-h3: 18px;
 $font-size-base: 16px;
-$headings-font-family: 'Gafata', sans-serif;
 
 @import "variables";
 @import "bootstrap";

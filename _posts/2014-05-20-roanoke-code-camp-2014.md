@@ -11,16 +11,16 @@ I gave two talks that centered around traditionally Linux-focused technologies. 
 
 ## High Availability Web Applications With Cassandra
 
-![](http://static.davehking.com/2014-05-20-cassandra-consistency-queries.png)
+![](/images/2014-05-20-cassandra-consistency-queries.png)
 
-[Slides](http://static.davehking.com/2014-roanoke-code-camp-high-availability-web-applications-with-cassandra.pdf) (662.27 KB)
+[Slides](/talks/2014-roanoke-code-camp-high-availability-web-applications-with-cassandra.pdf) (662.27 KB)
 
 I walk through Cassandra's data model, how gossip allows the cluster to handle failure, and how queries in Cassandra must be attached to a consistency level.  I describe how using Cassandra as session storage together with DNS managed by F5 Global Traffic Managers allows the Rackspace Cloud Control Panel to achieve redundancy in the face of datacenter failure.  Finally, I [demonstrate](https://github.com/tildedave/cassandra-flask-sessions) how you can use Cassandra to back your webapp sessions in a Flask application.
 
 ## Engineering for Visibility With Open Source Tools
 
-![](http://static.davehking.com/2014-05-20-continuous-improvement-cycle.png)
+![](/images/2014-05-20-continuous-improvement-cycle.png)
 
-[Slides](http://static.davehking.com/2014-roanoke-code-camp-engineering-for-visibility-with-open-source-tools.pdf) (1.3 MB)
+[Slides](/talks/2014-roanoke-code-camp-engineering-for-visibility-with-open-source-tools.pdf) (1.3 MB)
 
 Expanding on my [Engineering for Visibility]({% post_url 2014-01-10-engineering-for-visibility %}) blog post, I talk a bit about team improvement, especially focused on "DevOps" teams, and how you need timeseries data to really enable team improvement.  I then discuss a number of open source tools that you can use to collect, store, and analyze timeseries data; primarily [Graphite](http://graphite.wikidot.com) and [statsd](https://github.com/etsy/statsd/), with discussions of [logster](https://github.com/etsy/logster), [logstash](http://logstash.net), and [collectd](http://collectd.org/).
