@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Scaling Out Tilt's Nightwatch Tests with Magellan'
+title: "Scaling Out Tilt's Nightwatch Tests with Magellan"
 ---
 
 I've talked [in the past](http://www.slideshare.net/tildedave/nightwatch-at-tilt) about how Tilt rebuilt our Selenium suite using [Nightwatch](https://www.nightwatchjs.org), a JavaScript interface to Selenium WebDriver.  Our suite is now up to about 100 end-to-end user scenarios - this provides a good test of our overall functionality that we can use to certify that Tilt.com works before promoting builds from staging to production.
