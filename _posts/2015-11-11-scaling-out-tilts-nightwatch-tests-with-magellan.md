@@ -117,7 +117,7 @@ With our new setup it's been really easy to add new tests to our test suite - ju
 
 The new setup has been so easy to parallelize that we've brought down both our Jenkins server (overloaded the master with too many Chrome workers) and our staging environment (overloaded the web workers with too many requests).  Luckily turning down the parallelism was easy too...
 
-We're not yet using Magellan's Saucelabs integration, but we'll be adding that soon.  Our "mobile" testing really is currently just Chrome and PhantomJS faking an iPhone user agent.  This works well enough to make sure our mobile-only JavaScript fires, but doesn't actually the iPhone user experience, where many of our users are.  That makes it possible for mobile Safari-only bugs to pop up and not be caught by our automatic test suite.  Proper cross-browser automated test is important to make sure that we can catch browser-specific bugs before our customers.
+We're not yet using Magellan's Saucelabs integration, but we'll be adding that soon.  Our "mobile" testing really is currently just Chrome and PhantomJS faking an iPhone user agent.  This works well enough to make sure our mobile-only JavaScript files, but doesn't actually the iPhone user experience, where many of our users are.  That makes it possible for mobile Safari-only bugs to pop up and not be caught by our automatic test suite.  Proper cross-browser automated test is important to make sure that we can catch browser-specific bugs before our customers.
 
 ## End-to-End Testing Technologies
 
