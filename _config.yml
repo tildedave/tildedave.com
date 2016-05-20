@@ -1,11 +1,11 @@
 baseurl:        /
 port:    4000
 
-paginate:       5
+paginate: 5
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
-gems: ['jekyll-image_resizer']
+gems: ['jekyll-paginate']
 
 
 picture:        "/images/me-lakesuperior.jpg"

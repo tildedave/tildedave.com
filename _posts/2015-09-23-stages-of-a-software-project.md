@@ -28,7 +28,7 @@ I like to give a high level estimation for a project which is usually some delta
 
 ## "New Things" - Planning a SAML Login Flow
 
-{{ '/images/sso-diagram-fragment.png' | img:'class="img-responsive" style="max-width:320px"' }}
+<img src="/images/sso-diagram-fragment.png" class="img-responsive" style="max-width:320px" />
 
 Converting the Rackspace Cloud Control Panel to be a SAML identity provider stands out as a project with a lot of "new things".  We had to build a new login flow on top of a completely new set of libraries (pySAML), as well as teach the team an entirely new technology.  18 months later, Rackspace has gotten a lot out of that project: it's enabled product teams across the company to request access credentials from the MyCloud portal through a unified login screen - customers enter their passwords once to `mycloud.rackspace.com` which gives them credentials to access any other Control Panel that MyCloud recognizes as a SAML service provider.  (One of my old team members wrote an [article](https://medium.com/@alexbmeng/single-sign-on-at-rackspace-47e30eda8532) digging into the guts of how it works.)  Combined with a [shared style library](https://github.com/rackerlabs/canon), this has let other teams build out their own Control Panels without needing them to be deployed as part of the main `mycloud.rackspace.com` portal (this includes the recently out-of-beta [Cloud Intelligence](http://www.rackspace.com/blog/rackspace-intelligence-new-features/)).
 
@@ -62,7 +62,7 @@ Like the initial implementation, hardening against a full environment like produ
 
 ## Building Out The Tilt Notification Center
 
-{{ '/images/tilt-notification-center.png' | img:'class="img-responsive" style="max-width:320px"' }}
+<img src="/images/tilt-notification-center.png" class="img-responsive" style="max-width:320px" />
 
 A feature I recently ran through a hardening phase on was Tilt's notification center, released last April.  The Tilt notification center allows tilters (users of the Tilt platform) to see information about which crowdfunding campaigns their friends have joined, whether or not someone responded to their comment, whether or not campaigns that they've contributed to were successful - think Facebook's notification center, but for group payments.  This feature was built by several teams working in parallel - a web team (my team, responsible for the UI widget), an iOS team (responsible for the same UI widget as part of the mobile app), and a backend team (responsible for the data returned from an API).
 

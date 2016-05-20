@@ -13,7 +13,7 @@ This isn't to say that unit testing isn't valuable -- it's crucial for fast  fee
 
 We now have almost 100 test suites containing over 1200 user scenarios.  We've added a lot more features in the last year, including role-based access control, an [autoscaling](https://www.rackspace.com/blog/easily-scale-your-cloud-with-rackspace-auto-scale/) solution, and [a managed Hadoop offering](http://www.rackspace.com/cloud/big-data/).   We've rolled out new experiences around [image selection on server create](https://twitter.com/tildedave/status/426001712080363520) and [monitoring Cloud Databases](https://community.rackspace.com/products/f/25/t/692).  All of these changes have come "acceptance tests included".  Throughout these changes our deployment pipeline has remained broadly the same, with some minor differences: every hour, code is pushed to our preproduction environment, where our acceptance tests run.  Rather than rely on Jenkins-only automation we use an IRC bot heavily.  However, as we've grown both our suite and our team we've needed to adjust our strategies to scale our tests out.
 
-{{ '/images/test-dashboard.jpeg' | img:'class="img-responsive"' }}
+<img src="/images/test-dashboard.jpeg" class="img-responsive" />
 
 I consider our test suite the major engineering success of our project.  Four years ago the previous version of Rackspace Cloud Control Panel relied heavily on manual QE.  Production pushes required in-depth manual regression which sometimes took weeks.  Features were broken three days into a sprint and not discovered until two months later when a release candidate was being prepared.  That latency from break to fix made deployment a huge headache; we'd have to manually port patches between different release branches.  Today we run a full suite and detect these failures with a very fast turnaround.  Issues that are detected result in a revert of the code, allowing us to develop and deploy the `master` branch daily.  Rather than rely on a manually executed test matrix that different parts of the user interface behave as expected for different user types (account admin, product observer, etc), these tests automatically run every hour.  Defects reported to the team must pass through the mental filter of 'but the tests are passing' -- ruling out a large class of bug possibilities.
 
@@ -89,7 +89,7 @@ Of course this only really makes a big difference if your suite is _already_ rel
 
 The only cost of adding retries is extra time.  Retries for tests that run fast are almost completely free.
 
-{{ '/images/2014-05-05-retries-affect-overall-health.png' | img:'class="img-responsive"' }}
+<img src="/images/2014-05-05-retries-affect-overall-health.png" class="img-responsive" />
 
 This isn't to say that retries should be added in every situation.  When developing a test, you're probably not at a very high level of reliability.  You need to dig into all the various reasons that a test could be written better, fix those, and only after this turn on retries.  However, when dealing with a legacy test suite, adding another retry is a good way to make it behave slightly better until you have the time to invest possibly hours of development work into making it run better.  (I recently rewrote a test suite over a 5 day period, on and off.  Work to improve tests can sometimes take serious time and effort!)
 

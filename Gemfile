@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 1.4.3'
+gem 'jekyll', '~> 3.1.6'
 gem 'albino', '1.3.3'
 gem 'bootstrap-sass'
 gem 'foreman'
 gem 'compass'
 gem 'rake'
-gem 'jekyll-image_resizer'
-
+gem 'syck'
+gem 'safe_yaml', '~> 1.0.4'
+gem 'redcarpet'
+gem 'jekyll-paginate'
+gem 'pygmentize'

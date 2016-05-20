@@ -32,7 +32,11 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
   end
 end
 
-class Jekyll::MarkdownConverter
+class Jekyll::Converters::Markdown::Redcarpet2Markdown
+  def initialize(config)
+    @config = config
+  end
+
   def extensions
     Hash[ *@config['redcarpet']['extensions'].map {|e| [e.to_sym, true] }.flatten ]
   end
@@ -42,7 +46,6 @@ class Jekyll::MarkdownConverter
   end
 
   def convert(content)
-    return super unless @config['markdown'] == 'redcarpet2'
     markdown.render(content)
   end
 end

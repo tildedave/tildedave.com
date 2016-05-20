@@ -7,13 +7,13 @@ I've talked [in the past](http://www.slideshare.net/tildedave/nightwatch-at-tilt
 
 We recently converted to using TestArmada's [Magellan](https://github.com/TestArmada/magellan) Test runner, which automatically splits a test suite up and runs it in parallel.  Want to run the entire suite from your developer box against a staging environment?  Want to split up the suite to run eight concurrent tests and run each individually?  Want to set a global retry policy for all your end-to-end tests?  Magellan makes these tasks easy.
 
-{{ '/images/testarmada-logo.png' | img:'class="img-responsive" style="max-width:320px"' }}
+<img class="img-responsive" style="max-width:320px" src="/images/testarmada-logo.png" />
 
 ## Growing Pains
 
 Before Magellan, the main way that we scaled out our test suite was to run different Jenkins jobs.  Each Jenkins job would run a "slice" of our overall test suite against staging using a nightwatch tag and a Nightwatch environment.  As an example, we'd run our contribution tests (tagged `contribution`) in both desktop and mobile mode, using different Nightwatch environments.  Here's a sampling of our old Jenkins setup:
 
-{{ '/images/tilt-legacy-selenium-configuration.png' | img:'class="img-responsive" style="max-width:640px"' }}
+<img src="/images/tilt-legacy-selenium-configuration.png" class="img-responsive" style="max-width:640px" />
 
 The desktop and mobile web versions of the site expose similar functionality but with a different user experience - for example, the Tilt page has both mobile web and desktop versions with different implementations due to the different UX.  However, each of them makes it possible for people to contribute to a Tilt using a set of shared lightboxes, and those lightboxes have some desktop and mobile-specific behavior.  As an example, logging in to the site through Facebook on mobile uses a redirect login.  To make sure that both flows constantly work, it's important to run end-to-end tests that exercise both code paths.
 
@@ -35,7 +35,7 @@ One of the major selling points of the TestArmada platform was its support for m
 
 After contributing a few minor patches - including adding support for [Nightwatch tests written with ES6](https://github.com/TestArmada/magellan/pull/41) - and a few days of refactoring, we're down to four jobs using Chrome and PhantomJS 2.0.0, both running in desktop and mobile mode.
 
-{{ '/images/tilt-magellan-selenium-configuration.png' | img:'class="img-responsive" style="max-width:640px"' }}
+<img src="/images/tilt-magellan-selenium-configuration.png" class="img-responsive" style="max-width:640px" />
 
 The tests now run in less than 10 minutes - or even less, depending on the number of parallel workers that we throw at it using Magellan's `max_workers` arguments!  (I brought down the Jenkins master once by upping the number too high!)
 

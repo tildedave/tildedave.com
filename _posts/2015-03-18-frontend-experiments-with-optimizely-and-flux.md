@@ -19,13 +19,13 @@ We've found the Optimizely Visual Editor is best at small changes - updating a c
 
 Normally the Tilt homepage is very sparse - a navbar, a logo, and a call to action.
 
-{{ '/images/experiments-normal-homepage.png' | img:'class="img-responsive" alt="Normal Homepage"' }}
+<img src="/images/experiments-normal-homepage.png" class="img-responsive" alt="Normal Homepage" />
 
 We also have an activity feed of things that are happening on our site - what events people are pooling money for.  For public campaigns, your contributions will show up in the global activity feed, so seeing what's in the feed is a great way for people to understand examples of how they can use the Tilt product for their own needs.  A few months ago we ran an experiment that was ultimately unsuccessful - what if we moved the activity feed above the fold on the desktop version of the homepage?  Maybe that would spur more people to understand the product and click on the main "getting started" call to action.
 
 This version of the page would look something like the following - activity feed on the left, call to action on the right:
 
-{{ '/images/experiments-feed-above-the-fold.png' | img:'class="img-responsive" alt="Modified Homepage with Feed Above The Fold"' }}
+<img src="/images/experiments-feed-above-the-fold.png" class="img-responsive" alt="Modified Homepage with Feed Above The Fold" />
 
 Modifying this directly through Optimizely would be difficult - the activity feed is a complicated JavaScript widget and it's not clear that we can just lift it from one place on the page to the other using the live code editor.  Also, the cycle of testing a change in Optimizely isn't as good as it could be - you need to set up an experiment, upload it to CDN, and then opt into a "variation" of a paused experiment by activating it with [special query parameters](https://help.optimizely.com/hc/en-us/articles/200107480-Force-a-specific-variation-to-run-and-other-URL-parameters-).  This leads to longer development cycles than normal feature development, where code is served from a local machine and is available quickly on change.
 
@@ -35,7 +35,7 @@ Here we're going to render the page differently based on the contents of the `Ex
 
 You can think of our experiments setup as a series of lightswitches - depending on the configuration of the lightswitches, the page looks and responds differently.  Optimizely has the ability to switch individual lightswitches on and off, immediately updating the rendered state of the page.
 
-{{ '/images/experiments-architecture-with-flux.png' | img:'class="img-responsive" alt="Experiment Architecture With Flux"' }}
+<img src="/images/experiments-architecture-with-flux.png" class="img-responsive" alt="Experiment Architecture With Flux" />
 
 ## Looking At The Code: The Homepage
 
@@ -196,7 +196,7 @@ window.TiltExperiments = {
 
 To set up the experiment in Optimizely, we use `TiltExperiments.activate('homepage-feed')` as the custom JavaScript code.  While doing this, you can utilize all of the normal Optimizely A/B test features (audiences, variations, measuring the success of an experiment through monitoring clicks on a call to action or page engagement, URL targeting).
 
-{{ '/images/experiments-optimizely-setup.png' | img:'class="img-responsive" alt="Optimizely Setup"' }}
+<img src="/images/experiments-optimizely-setup.png" class="img-responsive" alt="Optimizely Setup" />
 
 After running this experiment on 50% of our homepage traffic for a week we determined that the experiment was a failure - there was more engagement (more people looking on and clicking the feed), but less people were driven to the 'get started' call to action button.  We disabled the Optimizely experiment and removed the homepage feed conditionals from our code.
 
