@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Why Java: Simple Syntax Leads To Clear Concepts'
-
 ---
 
 I'll start with a bold claim:

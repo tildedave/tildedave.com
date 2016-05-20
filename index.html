@@ -14,13 +14,8 @@ layout: default
 
   {% include contact.html %}
 
-  <div class="row">
-    {% if lastpost.previous %}
-    <div class="col-sm-4"><a rel="prev" href="{{ lastpost.previous.url }}">&larr; Previous</a></div>
-    {% endif %}
-    <div class="col-sm-4">
-      <a rel="posts" href="/posts.html">All Posts</a>
-      (<a href="{{ site.rss }}">RSS</a>)
-    </div>
+  <div class="footer">
+    Here's <a rel="posts" href="/posts.html">everything else I've written</a>.
+    Here's an <a href="{{ site.rss }}">RSS feed</a>.
   </div>
 </article>
