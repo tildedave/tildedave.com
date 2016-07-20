@@ -14,7 +14,7 @@ It's not clear that Frank Zappa really liked being interviewed, but he definitel
 
 <center><div style="margin: 20px;"><iframe width="420" height="315" src="//www.youtube.com/embed/8ISil7IHzxc" frameborder="0" allowfullscreen></iframe></div></center>
 
-Being a little older than during my last immersions in the Zappascape made for an interesting viewing experience.  His sexually vulgar lyrics have really not aged well - songs like _Bobby Brown Goes Down_ have lost their humor for me as I have a broader understanding of gender identity.  An interview where he extols the cultural heritage of other countries was particularly frustrating for me (unfortunately, I can't find online the part of quote where he talks about ethnic history):  
+Being a little older than during my last immersions in the Zappascape made for an interesting viewing experience.  His sexually vulgar lyrics have really not aged well - songs like _Bobby Brown Goes Down_ have lost their humor for me as I have a broader understanding of gender identity.  An interview where he extols the cultural heritage of other countries was particularly frustrating (unfortunately, I can't find online the part of quote where he talks about ethnic history):  
 
 > “The thing that sets the Americans apart from the rest of the cultures in the world is we’re so fucking stupid. This country has been around for a couple of hundred years and we think we are hot shit, and they don’t even realize that other countries have thousands of years of history and culture and they are proud of it. And when we deal on an international level, with foreign policy and we’re going as this big American strong country, they must laugh up their sleeves at us because we are nothing.
 
