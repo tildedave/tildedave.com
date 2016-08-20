@@ -72,7 +72,7 @@ die exc 400 => ERR_ID_NO_SUCH_USER_WITH_ID,
 
 Even the little gem `[ qw/uuid id/ ]` is a bit confusing - what is that?  Well, it's a reference to the list of two strings `'uuid'` and `'id'`.  This differs from  `qw/uuid id/` which is the list itself, which is a fancy way of writing `('uuid', 'id')`.  The reason to put this list in square brackets `[ ]` is because the library that we're for our ORM using expects its arguments to be in scalar context.
 
-Languages that replaced Perl in the "hacker community" like Python and Ruby just got rid of the reference/value dichotomy and we pass the references to these complicated data-structures around as values.  Ruby doesn't need to have variables like `$item` and `@list` because the syntactic forms for lists just take scalars.  I think the justification for having different contexts was primarily a linguistic one - it's a little ugly, but it reads better, but if I'm calling `include?` on a variable in a Ruby script it's pretty obvious to me that it's an array of some kind (or else it's gonna blow up when I run it!).
+Languages that replaced Perl in the "hacker community" like Python and Ruby just got rid of the reference/value dichotomy and we pass the references to these complicated data-structures around as values.  Ruby doesn't need to have variables like `$item` and `@list` because the syntactic forms for lists just take scalars.  I think the justification for having different contexts was primarily a linguistic one - it may read better, but if I'm calling `include?` on a variable in a Ruby script it's pretty obvious to me that it's an array of some kind (or else it's gonna blow up when I run it!).
 
 ## Something Nice About List Context
 
