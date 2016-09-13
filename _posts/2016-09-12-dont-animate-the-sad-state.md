@@ -14,8 +14,8 @@ Because of this I would rather ...
 
 * Animate the result of a "pay" button than an "ignore" button
 * Add press states to button around the "top of funnel" parts of the app than on something eight screens down
-* Polishing the signup experience (new users) than the deactivate account experience (people who aren't likely to be with you much longer)
-* Work on making the flow around "got a push notification, take an action" fast and seamless, rather than the flow around a 'cold' app boot-up.
+* Polish the signup experience (new users) than the deactivate account experience (people who aren't likely to be with you much longer)
+* Make "got a push notification, take an action" flow as fast and seamless as possible, rather than the flow around a 'cold' app boot-up.
 
 This doesn't mean you shouldn't spend time handling errors (not everything will always go right always!), you ideally you have some basic error framework (for example, a red "toast" message that pops up) that lets you signal failure ... and then you can spend the rest of your mental product/engineering/design/testing energy back towards those top-of-funnel happy paths that will affect most of your users who are trying to use the product.
 
