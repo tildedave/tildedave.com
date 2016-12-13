@@ -1,0 +1,24 @@
+---
+title: Dave King
+layout: default
+---
+
+{% assign personalposts = site.posts | where:"is_personal", "1" %}
+
+<article>
+  {% for post in personalposts %}
+  <h1 class="post-title"><a href="{{post.url}}" class="self-link">{{ post.title }}</a></h1>
+
+  <div class="post-content">
+  {{ post.content }}
+  </div>
+
+  {% endfor %}
+
+  {% include contact.html %}
+
+  <div class="footer">
+    Here's <a rel="posts" href="/posts.html">everything else I've written</a>.
+    Here's an <a href="{{ site.rss }}">RSS feed</a>.
+  </div>
+</article>
