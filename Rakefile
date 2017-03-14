@@ -8,7 +8,8 @@ task :build do |t|
 end
 
 task :upload => [:build] do
-  sh  "aws s3 sync _site/ s3://tildedave-com"
+  sh "aws s3 sync _site/ s3://tildedave-com"
+  sh "aws cloudfront create-invalidation --distribution-id E6AU6QQZ1NAOI --paths \"/*\""
 end
 
 task :install => [:build] do |t|
