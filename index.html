@@ -3,8 +3,7 @@ title: Dave King
 layout: default
 ---
 
-{% assign nonpersonalposts = site.posts | where:"is_personal", "" %}
-{% assign lastpost = nonpersonalposts.first %}
+{% assign lastpost = site.posts.first %}
 
 <article>
   <h1 class="post-title"><a href="{{lastpost.url}}" class="self-link">{{ lastpost.title }}</a></h1>

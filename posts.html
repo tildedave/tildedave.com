@@ -5,19 +5,13 @@ layout: default
 
 <div class="table-of-contents">
 
-{% assign nonpersonalposts = site.posts | where:"is_personal", "" %}
-
   <h1>Weblog Entries</h1>
-    {% for post in nonpersonalposts %}
+    {% for post in site.posts %}
     <div class="row">
       <div class="col-xs-2"><span>{{ post.date | date_to_string }}</span></div>
       <div class="col-xs-10"><a href="{{ post.url }}">{{ post.title }}</a></div>
     </div>
     {% endfor %}
   </table>
-
-  <h1>Personal Blog</h1>
-
-  I'm trying out some writing about <a href="/personal.html">non-technical topics</a> as well: history, backpacking, etc.
 
 </div>
