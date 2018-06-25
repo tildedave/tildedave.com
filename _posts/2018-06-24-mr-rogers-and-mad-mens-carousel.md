@@ -26,4 +26,4 @@ In the documentary, the Lady Aberlin actress points out that Daniel doesn't "sna
 
 Later, there's a scene where various people who worked with Mr. Rogers think back to someone who helped them, someone who was there for them - their parents, old teachers, old friends and loved ones.  They're there, inside of you, and the documentary bought to life for me how important that emotional place is to maintain as an oasis among all the struggles of adulthood.
 
-It's powerful stuff, but the nostalgia is what makes it even more powerful: these songs and characters are still rattling around my brain thirty years after the last time I sat down to explicitly watch an episode of it, and the documentary reframes all those songs and characters in a way that was really impacting for me as an adult.
+It's powerful stuff, but the nostalgia is what makes it even more powerful: these songs and characters still rattle around my brain thirty years after the last time I sat down to watch an episode of it, and the documentary reframed all those songs and characters in a way that was really impactful to me as an adult viewer.
