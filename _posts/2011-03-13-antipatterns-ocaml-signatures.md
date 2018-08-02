@@ -5,6 +5,7 @@ tags:
   - code-smells
   - ocaml
   - refactoring
+is_unlisted: 1
 
 ---
 

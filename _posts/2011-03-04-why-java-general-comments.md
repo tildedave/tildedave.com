@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Why Java: general comments'
-
+is_unlisted: 1
 ---
 
 Java doesn't get a lot of respect from developers nowadays -- as any programming thread regarding the language will indicate, it is not the new hotness.  As the drum beats onwards towards more dynamic and interfaceless languages, it is worth examining the things that make Java worthwhile as a <i>programming language</i>.  I believe that Java is a reasonable choice for a developer, even one that is interested in more 'modern' programming languages.

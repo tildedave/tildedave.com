@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Deontological Software Development'
+is_unlisted: 1
 ---
 
 I've recently started walking the dog for three miles every morning.  It's a great for clearing my head before work and making sure I have some "me time" outside of the daily work grind.  During these walks I listen to lectures from the [Open Yale Courses](http://oyc.yale.edu/).  Back in August I started my mornings listening to lectures on the [Hist 210: Early Middle Ages](http://oyc.yale.edu/history/hist-210); I welcomed fall with [Hist 202: European Civilization](http://oyc.yale.edu/history/hist-202).  Recently I finished up [Phil 181: Philosophy and Science of Human Nature](http://oyc.yale.edu/philosophy/phil-181) and I found a lot of the ideas it presented professionally relevant.

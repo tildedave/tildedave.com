@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Frontend Learning Resources'
+is_unlisted: 1
 ---
 
 So I am starting a new job on Monday with [Tilt](https://tilt.com) as a Frontend Engineer.  In the process of doing this I've been reacquainting myself with the frontend landscape.  In talking with a friend I realized that there are many things to learn and maybe not a lot of guidance.  This is my attempt to compile a set of learning resources that either I found helpful or that I think I would find helpful for someone who was just beginning frontend development from a predominantly server-side role.

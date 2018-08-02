@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Delegation Tips for New Engineering Managers"
+is_unlisted: 1
 ---
 
 So I'm back to being a team lead again - though my hands get a bit dirtier because it's a smaller team in a growing company.  We recently had a product/engineering offsite to prepare for the new year and as part of this we went through our personal histories along with something that we're not good at (and presumably want to work to get better at this year).  Unfortunately that's not a particularly hard question for me to answer - I'm always working to manage conflict better and maintain positive work relationships through all the stress and sweat that is software development (I'm only being slightly facetious).  ("Unfortunately" because you'd think one of these years I wouldn't need to work on it any more.)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'More Acceptance Testing Strategies'
+is_unlisted: 1
 ---
 
 I last wrote about my project's [acceptance testing]({% post_url 2013-04-27-acceptance-testing-strategies %}) setup a year ago.  At the time we had over 20 test suites that exercised a large part (but not all) of the code.  In particular some of the longer-running operations (image creation, server resize) were not covered by our test suites.  As we developed the site we continued to break behavior that was not covered by automated tests.

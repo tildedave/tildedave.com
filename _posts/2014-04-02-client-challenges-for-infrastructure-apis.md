@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Client Challenges for Infrastructure APIs'
+is_unlisted: 1
 ---
 
 My team integrates with a number of [OpenStack](https://www.openstack.org/) APIs that are primarily concerned with provisioning resources.  Using the OpenStack Compute API (Nova), you can create a virtualized server and use it to power a website.  The API won't configure your site; you'll need to log in using an SSH client such as [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [OpenSSH](http://www.openssh.com/) and configure Wordpress yourself.  These APIs replace the old workflow where to get a box set up, you'd have to open a ticket and it would sit in a queue before it got to the right people who would set up your physical machine in a datacenter.  A public cloud offering based on OpenStack (such as Rackspace Cloud Servers) supports on-demand resource creation, so there are no tickets, no physical machines, no special wiring that needs to be done -- new servers are slices of a larger machine that running a virtualization technology such as [KVM](http://www.linux-kvm.org/).  Although system administration tasks on Windows and Linux operating systems are drastically different, the OpenStack Compute API provides a uniform interface for creating, rebooting, imaging, and so on.  I use the term _infrastructure APIs_ to describe these.

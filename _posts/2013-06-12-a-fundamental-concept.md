@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'A Fundamental Concept'
+is_unlisted: 1
 ---
 
 Something that interests me is program structure.  My last project had been maintained by at least four separate development teams with shifting team members over the course of six years.  Though coding styles made it obvious which team was last "in the code", the underlying program structure remained the common thread.  Data was consumed through an Enterprise Service Bus in XML or a SQL database, turned into objects through technologies like JAXB/Hibernate, and moved forward through the system until it was consumed by the `Action` classes (controllers) and rendered into a JSP template.  _Architecture_ is what abstractions are introduced in order to start talking about business logic and stop talking about technologies.  However, without a firm understanding of how data flowed through the project, it was impossible to take know the best way to adapt the project's codebase to meet its current needs.

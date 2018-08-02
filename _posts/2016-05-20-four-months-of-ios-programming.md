@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Four Months of iOS Programming'
+is_unlisted: 1
 ---
 
 So I'm still at Tilt.  About a year ago we [reorganized our teams](http://engineering.tilt.com/engineering-your-organization/) around product areas - this January we did the other half of this and moved our mobile application delivery to be a responsibility of our product teams.  My team is now responsible for delivering features across the website (tilt.com), iOS, Android, and the API (our notifications platform).

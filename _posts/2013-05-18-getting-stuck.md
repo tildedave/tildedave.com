@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Getting Stuck'
+is_unlisted: 1
 ---
 
 I run into a lot of problems.  Some problems are easy to handle, some require concentration, and some remain insoluble no matter how much energy I spend.  The problems I remember are where for whatever reason, I end up _stuck_ and can't get much traction.  The stories that come out of solving these problems are always great, but also I've been in situations where I've wasted weeks and ended up with very little to show at the end.

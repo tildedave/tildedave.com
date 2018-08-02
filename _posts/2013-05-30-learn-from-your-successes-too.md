@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Learn From Your Successes, Too'
+is_unlisted: 1
 ---
 
 Root cause analysis is a great thinking tool for uncovering failures in your processes that lead to team failures.  When practiced, you repeatedly ask "Why?", focusing on the decisions that lead to a negative outcome without blaming the individuals involved.  My team uses root cause analysis whenever a major customer impacting event occurs to determine how we can improve our process.  A lot of great ideas that are now central to our team have come out of these sessions, including the concept of ['blocking' tests]({% post_url 2013-04-27-acceptance-testing-strategies%}) in our build pipeline.

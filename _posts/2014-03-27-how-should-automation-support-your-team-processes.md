@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'How Should Automation Support Your Team Processes?'
+is_unlisted: 1
 ---
 
 My development team uses a number of automated systems to assist in day-to-day development.  [Jenkins](http://jenkins-ci.org/) runs tests and packages the code, [Dreadnot](https://github.com/racker/dreadnot) orchestrates the code to different environments, [Hubot](http://hubot.github.com/) faciliates communication over IRC.  These systems are only platforms for delivery: to automate team processes, custom code is written on top of these platforms.  For example, our IRC bot sends out reminders for team standups 15 minutes prior every day -- this isn't built into Hubot; for it to work, custom code needs to be written.  After enough of this a team's development process is held together by a fragile web of 1-off code and configured systems.

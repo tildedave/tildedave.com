@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Why Java: Simple Syntax Leads To Clear Concepts'
+is_unlisted: 1
 ---
 
 I'll start with a bold claim:

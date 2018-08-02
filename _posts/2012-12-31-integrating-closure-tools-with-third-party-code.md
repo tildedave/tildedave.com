@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Integrating Closure Tools With Third Party Code'
+is_unlisted: 1
 ---
 
 My team develops Rackspace's Customer Control Panel, which allows

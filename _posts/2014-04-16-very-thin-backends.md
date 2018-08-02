@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Very Thin Backends'
+is_unlisted: 1
 ---
 
 _Thin backends_ are application servers that act as a small amount of code wrapping a persistence layer (a database or a web service).  The first attempt at building a thin backend for the Rackspace Cloud Control Panel leveraged [libcloud](http://libcloud.apache.org), thinking that we could rely on the work of an open source library to move quickly.  Our API wrapped the programmatic libcloud API:

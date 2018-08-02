@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Don''t Use Floats or Doubles*'
-
+is_unlisted: 1
 ---
 
 * Obviously programs involved with computer graphics, simulations, statistics, and scientific computing need to use floats and doubles for a lot of reasons.  If you're not doing one of those things, read on!

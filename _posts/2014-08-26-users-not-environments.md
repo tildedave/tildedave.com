@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Test With Users, Not Environments'
+is_unlisted: 1
 ---
 
 In a service-oriented architecture multiple product teams work together towards creating value for the customer.  Backend teams need to ensure that the end-to-end functionality _works_, while frontend teams create an interface that exposes this functionality to customers, usually through web browser, mobile, or native applications.

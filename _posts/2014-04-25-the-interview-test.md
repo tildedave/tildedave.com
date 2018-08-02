@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'The Interview Test'
+is_unlisted: 1
 ---
 
 I do a lot of interviews.  In an interview I try to dig deeply into a candidate's experience, understand how they think, make sure that their experience is a match for the position that they're interviewing for, and anticipate whether they will be able to take on greater challenges that will be coming in the future.  A well-done interview is a frank assessment of a candidate's background and which projects in their history were more or less valuable.

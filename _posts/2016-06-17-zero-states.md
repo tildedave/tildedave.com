@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Zero States'
+is_unlisted: 1
 ---
 
 We just finished work on another feature yesterday.  A lot of our day to day software development planning tends to be pretty adhoc - after a few years experience following more formal estimation processes, I've been trying to encourage my teams away from up-front planning (and so towards more team ownership of the delivered work).  This means that stuff can sometimes fall through the cracks, and yesterday I noticed we hadn't done any testing around what things looked like for an initial signup ... which of course was a blank gray screen.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Roanoke Code Camp 2014'
+is_unlisted: 1
 ---
 
 Last Saturday I spent the day at [Roanoke Code Camp](http://roanokecodecamp.org), an event sponsored by the Roanoke Valley .NET Users Group.  While I don't have much familiarity with the .NET world (outside of some surface-level comparisons with Java), the sessions indicated the amount that web technologies and Microsoft Azure have unified technology choices between the "Microsoft world" and the "Linux world".

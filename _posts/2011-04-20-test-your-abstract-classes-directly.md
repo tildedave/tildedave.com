@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Test Your Abstract Classes Directly'
+is_unlisted: 1
 
 ---
 

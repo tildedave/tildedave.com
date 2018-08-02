@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Engineering for Visibility'
+is_unlisted: 1
 ---
 
 In their [post](http://codeascraft.com/2011/02/15/measure-anything-measure-everything/) introducing [`statsd`](https://github.com/etsy/statsd/), the Etsy engineering team talks about the importance of being able to quickly go from a question ("How often does X happen?") and turn it into a graph of X happening.  To me, this latency is the heart of "devops": how fast can you _answer questions_ about a product to inform future development?

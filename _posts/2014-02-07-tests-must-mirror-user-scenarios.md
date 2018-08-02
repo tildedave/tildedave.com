@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Tests Must Mirror User Scenarios'
+is_unlisted: 1
 ---
 
 Automated testing is the best way to ensure that the code you write continues to work far into the future.  An issue that I frequently see newer developers get tripped on is the _why_ behind testing: a project has a whole bunch of tests, you're adding some new functionality, more tests need to be written to cover all of the added code ... but which ones?

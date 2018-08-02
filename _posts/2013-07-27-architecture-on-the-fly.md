@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Architecture on the Fly'
+is_unlisted: 1
 ---
 
 Architecture forms the vocabulary of an application's codebase.  My recent post on [data loading]({% post_url 2013-06-20-large-scale-client-side-data-loading %}) introduced the concepts that my project uses to solve the problem of displaying customer data.   Application architecture is the next level of object-oriented design: instead of designing the behavior of one part of the system, you are concerned with how an entire set of objects interact.  Architecture answers the question _"Our application is X"_.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Acceptance Testing Strategies'
+is_unlisted: 1
 ---
 
 My team, the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), practices continus delivery; our practices are that once code is merged into the `master` branch, it should be in production within two hours.  (I wrote [before]({% post_url 2012-08-08-courage %}) about how we did over ten production releases on our launch day.)  The speed at which code can make it to production and address customer needs is a great thing: however, without an involved manual testing phase there are a lot more opportunities for defects to escape.

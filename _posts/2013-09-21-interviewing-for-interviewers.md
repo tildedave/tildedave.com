@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Interviewing For Interviewers'
+is_unlisted: 1
 ---
 
 Technical interviewing is a major part of my job, and over the last four years I've been in over 50 interview panels for both entry level and senior software development positions.  After training, it's easy to get thrown into interviews without thinking too much about it: just another part of the job.  Over the last three years I've become a lot more strategic in how I approach interviews; I hope what's been useful for me is also useful for you, either as interviewer or candidate.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'jasmine-mocks: A Tiny Mocking Library for Jasmine'
+is_unlisted: 1
 ---
 
 I just released version 0.0.2 of [jasmine-mocks](https://github.com/tildedave/jasmine-mocks), a tiny mocking library for use with Jasmine.

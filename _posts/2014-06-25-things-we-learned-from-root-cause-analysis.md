@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Things We Learned From Root Cause Analysis'
+is_unlisted: 1
 ---
 
 My project has gone from being a green-field (e.g. not released to customers) project to being used for thousands of users a day.  During that time we've kept track of almost every production failure through _root cause analysis_.  Root cause analysis, e.g. learning through failure, has been our main learning tool in changing our process to avoid customers outages.

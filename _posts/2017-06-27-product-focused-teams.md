@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Engineering on Product-Focused Teams'
+is_unlisted: 1
 ---
 
 So the new job orients engineers across product verticals, too.  This also a [change my last employer made](http://engineering.tilt.com/engineering-your-organization/) a few years ago.  My first awareness of this organizational structure came from Spotify's first article on ["Scaling Agile"](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/), and it seems to be a pretty common organization nowadays for technology companies at a certain size.  Having worked in this environment for a few years I figured I would write down some of my observations and the tensions that I've seen emerge.

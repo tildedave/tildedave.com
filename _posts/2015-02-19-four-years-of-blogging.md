@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Four Years of Blogging"
+is_unlisted: 1
 ---
 
 So this blog is coming up on four years - in that time it's moved from a Wordpress install hosted on Laughing Squid to a static Jekyll site hosted on a Rackspace Cloud Server to a Docker container that's now living on Digital Ocean.  A lot has changed from my introductory writings about functional programming and investigations into Clojure, OCaml, and Haskell - I've moved from being an academic with a lot of experience with Java the language to a polyglot industry professional with a good understanding of the various moving parts involved in a basic web deployment.  I've gone from thinking deeply about the languages that I use (I need static typing!  everyone needs static typing!  let's build better static types!) to focusing more on the customer experience, and understanding how important a language's ecosystem is to really get your job done.  In the process JavaScript became my core language (out of necessity) and I've bounced up and down the stack.  I've learned how to build frontend widgets with rich behaviors, dig deeply to improve error rates/page loads, and lead teams.

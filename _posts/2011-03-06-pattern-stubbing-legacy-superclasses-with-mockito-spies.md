@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Pattern: Stubbing Legacy Superclasses with Mockito Spies'
+is_unlisted: 1
 
 ---
 
