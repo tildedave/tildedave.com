@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'People Will Leave'
+is_unlisted: 1
 ---
 
 When I started at my current role, Tilt had recently grown from ~20 people in a very intimate office to ~40-50 people in one of those downtown SFO offices that they so perfectly captured on the recent season of Silicon Valley.  At the time there was some internal discussion about what happens when someone leaves.  Should people email the entire company - who needs to hear about this?  In the older version of the company everyone was best friends with each other, ate lunch/dinner together, and worked long hours building out the product.  As a company grows out and attracts people from different backgrounds, they will necessarily be less invested than the original team of builders.

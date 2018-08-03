@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "\"Don't Animate the Sad State\""
-
+is_unlisted: 1
 ---
 
 My team spends most of its time building user-facing features into [Tilt](https://www.tilt.com). Day-to-day development involves hooking up our API into our mobile apps, making sure that the clients have the right screens and everything's layed out according to the mocks, and that the feature as a whole _works_ top to bottom.  Once we've gotten a feature working from top to bottom, we usually have a bit of time before we ship - it's time to polish!

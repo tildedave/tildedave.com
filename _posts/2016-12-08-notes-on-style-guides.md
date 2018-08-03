@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Notes on Style Guides'
+is_unlisted: 1
 ---
 
 A style guide is a tool that designers use to standardize on visual design elements and interaction patterns.  Style guides are used by companies to convey a unified "sense of product" - the Apple visual style for their boxes and advertisements is very distinctive.  The fonts, colors, and logos are all unified - so much so that you "know" it's Apple blurring your eyes and looking at the new [MacBook Pro](http://www.apple.com/macbook-pro/) page.

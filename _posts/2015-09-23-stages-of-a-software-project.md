@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Stages of a Software Project'
+is_unlisted: 1
 ---
 
 I've been leading software teams for about three years now.  As a software lead you're expected to do what it takes to that your team is delivering software that's high quality at a high velocity.  I interpret _quality_ as how well the thing you've been building actually works - are there functional bugs, what's the performance (both real and perceived), and other end-user focused measurables.  I interpret _velocity_ as how long it takes for something to go from being an idea to being real - how long does it take you to fix a bug, how long does it take to build a new feature.  Quality and velocity are always pulling against one another - we have to move fast, but we can't move too fast and cut too many corners or else we'll get swallowed by bugs (customer pain) and legacy code (slowing us down in the future).

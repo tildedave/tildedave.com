@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Suggesting Technical Improvements'
+is_unlisted: 1
 ---
 
 About six months ago, Tilt Engineering switched from technology-focused teams to [product-focused teams](http://engineering.tilt.com/engineering-your-organization/) - what this meant was that rather than have "API" or "Website" teams, we have a few teams focused around core customer flows (my team owns login/signup/invites).  The main benefit I've seen from this is that it allows development of new features to happen cross-platform: the same team owns the stack all the way from the JavaScript and CSS in a frontend widget down to the data persistence layer.  This is a really powerful way to create value for our customers.  However, quality and velocity of software delivery is to a great deal determined by the health of the overall codebase - the technology that's being used, how modern it is, what libraries are used and do they help or hinder the problem space, how much legacy code is around, and so on.  At our company, these concerns are largely independent of the distinctions drawn between product teams, and to maintain a high standard of quality, technology conversations still need to happen, no matter who's assigned to what team.
