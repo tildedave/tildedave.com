@@ -1,8 +1,12 @@
 body {
   // https://css-tricks.com/snippets/css/better-helvetica/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: Palatino, Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .self-link {
@@ -53,4 +57,17 @@ table {
 
 .footer {
   margin: 20px 0;
+}
+
+.theorem {
+ display: block;
+ font-style: italic;
+}
+.theorem:before {
+ content: "Theorem. ";
+ font-weight: bold;
+ font-style: normal;
+}
+.theorem[text]:before {
+ content: "Theorem (" attr(text) ") ";
 }

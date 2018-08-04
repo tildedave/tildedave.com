@@ -60,6 +60,7 @@ DEPENDENCIES
   foreman
   jekyll (~> 3.1.6)
   jekyll-paginate
+  kramdown (= 1.11.1)
   pygmentize
   rake
   redcarpet
@@ -67,4 +68,4 @@ DEPENDENCIES
   syck
 
 BUNDLED WITH
-   1.11.2
+   1.14.6
