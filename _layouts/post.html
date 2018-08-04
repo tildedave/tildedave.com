@@ -13,4 +13,8 @@ layout: default
   {% include contact.html %}
 
   {% include navigation.html %}
+
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
 </article>

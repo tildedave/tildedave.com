@@ -12,6 +12,10 @@ layout: default
   {{ lastpost.content }}
   </div>
 
+  {% if lastpost.comments %}
+    {% include disqus.html %}
+  {% endif %}
+
   <div class="footer">
     <a rel="posts" href="/posts.html">Archives</a> | <a href="{{ site.rss }}">RSS</a>.
   </div>
