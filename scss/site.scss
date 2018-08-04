@@ -60,14 +60,16 @@ table {
 }
 
 .theorem {
- display: block;
- font-style: italic;
+  display: block;
+  font-style: italic;
 }
+
 .theorem:before {
- content: "Theorem. ";
- font-weight: bold;
- font-style: normal;
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
 }
+
 .theorem[text]:before {
- content: "Theorem (" attr(text) ") ";
+  content: "Theorem (" attr(text) ") ";
 }
