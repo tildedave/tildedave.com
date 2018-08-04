@@ -12,7 +12,7 @@ For example $$x^3 - 2 = 0$$ has three solutions in the complex numbers, one is $
 
 ## Jury Rigging Fields
 
-The basic idea of a field extension is that you take a field (some number system that expresses linear relationships such that inverses also exist), adjoin extra elements to it, and see what the new object looks like.  Generally you work in $$\mathbb{Q}$$ which are the the rational numbers (1, -2, 3/4, 1/2, but no square roots, no crazy imaginary elements, etc).
+The basic idea of a field extension is that you take a field (numbers can be multiplied, added, and divided with one another), adjoin extra elements to it, and see what the new object looks like.  Generally you work in $$\mathbb{Q}$$ which are the the rational numbers (1, -2, 3/4, 1/2, but no square roots, no crazy imaginary elements, etc).
 
 The idea then is to take some polynomial that has no solutions in the "base field", for example there are no rational numbers that satisfy $$x^3 - 2 = 0$$.  So you say, "okay, since there's no $$x$$ such that cubing it is 2, let's add an element that does and see what comes of it".  We'll call that number $$\sqrt[3]{2}$$ and add it to $$\mathbb{Q}$$.  This ends up getting us a new field $$\mathbb{Q}[\sqrt[3]{2}]$$.
 
