@@ -5,18 +5,42 @@ layout: default
 
 {% assign lastpost = site.posts.first %}
 
-<article>
-  <h1 class="post-title"><a href="{{lastpost.url}}" class="self-link">{{ lastpost.title }}</a></h1>
-
-  <div class="post-content">
-  {{ lastpost.content }}
+<div class="row intro">
+  <div class="hidden-xs col-sm-10">
+    <p class="lead">
+      Hi, I'm <a href="/me.html">Dave King</a>, a software professional living in Oakland, CA.  Runner, backpacker, history buff.
+    </p>
   </div>
+  <div class="hidden-xs col-sm-2">
+    <a href="/">
+      <img src="{{ site.picture }}" alt="Picture of blog author" class="img-circle img-responsive intro-picture">
+    </a>
+  </div>
+</div>
 
-  {% if lastpost.comments %}
-    {% include disqus.html %}
-  {% endif %}
+<article>
+  <p>I began programming when I was 8 writing text adventures in GWBASIC on my school's computer.  The day job tends to be some combination of JavaScript, Python, and Java - all objectively better technologies, all far less fun.</p>
+
+  <h1>Recent Blog Articles</h1>
+    {% for post in site.posts limit:5 %}
+    {% if post.is_unlisted %}
+    {% else %}
+    <div class="row">
+      <div class="col-xs-3"><span>{{ post.date | date_to_string }}</span></div>
+      <div class="col-xs-9"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+  <h1>Books I've Read This Year (2018)</h1>
+  <ul>
+    <li><i>The Dispossessed</i>, Ursula Le Guin</li>
+    <li><i>The Left Hand of Darkness</i>, Ursula Le Guin</li>
+    <li><i>A Distant Mirror</i>, Barbara Tuchman</li>
+    <li><i>Why The West Rules For Now</i>, Ian Morris</li>
+  </ul>
 
   <div class="footer">
-    <a rel="posts" href="/posts.html">Archives</a> | <a href="{{ site.rss }}">RSS</a>.
+    <a rel="posts" href="/posts.html">Blog Archives</a> | <a href="{{ site.rss }}">RSS</a>.
   </div>
 </article>
