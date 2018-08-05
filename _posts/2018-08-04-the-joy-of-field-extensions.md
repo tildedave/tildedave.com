@@ -18,7 +18,7 @@ The idea then is to take some polynomial that has no solutions in the "base fiel
 
 What does this new field look like?  Well, it's a field, it has all the same familiar rational numbers, but it also has this crazy new number $$\sqrt[3]{2}$$.  Since it's a field it has $$ 1 / \sqrt[3]{2}$$, and it also has all algebraic combinations of $$\sqrt[3]{2}$$ with every other element in the field including itself.  So this number system has all these new numbers $$(\sqrt[3]{2})^2$$, $$(13 / \sqrt[3]{2})^8$$, $$(1 + \sqrt[3]{2})/17$$, and so on.  It's still a number system like you're used to, there's just this new number along for the ride, and it turns out if you cube it you get $$2$$.  Normal enough.
 
-It turns out that for any field $$K$$ and any irreducible polynomial $$p(x)$$ (with coefficients in $$K$$), you can create a new field $$L = K[x]$$ where $$x$$ is a root of the irreducible polynomial.  (The choice of what this $$x$$ 'actually is' - for example if you consider what it is in projection into the complex numbers - ends up not mattering, there's a theorem that all "stem fields" are isomorphic to each other.)
+It turns out that for any field $$K$$ and any irreducible polynomial $$p(x)$$ (with coefficients in $$K$$), you can create a new field $$L = K[x]$$ where $$x$$ is a root of the irreducible polynomial.  (The choice of what this $$x$$ 'actually is' - for example if you consider what it is in projection into the complex numbers - ends up not mattering, there's a theorem that all "stem fields" are the same.)
 
 ## That's No Field...
 
@@ -34,9 +34,9 @@ It turns out that in the structure $$\mathbb{Q}[\sqrt[3]{2}]$$ the polynomial $$
 
 Since both $$\sqrt[3]{2}$$ and $$\omega\sqrt[3]{2}$$ are elements of this new field so is the $$\omega$$ element ($$\omega = \omega\sqrt[3]{2} \cdot 1/\sqrt[3]{2}$$). Since $$\omega^3 = 1$$ it also satisfies some strange-looking relationships: $$\omega^{-1} = \omega^2$$ and $$\omega^2 = -(\omega + 1)$$.  This shows us that the second root of the polynomial $$P$$ is expressable as $$-(\omega + 1) \cdot \sqrt[3]{2}$$.  So the members of this new field end up as being expressable as linear combinations of $$1, \omega, \sqrt[3]{2}, (\sqrt[3]{2})^2, \omega\sqrt[3]{2}, \omega\sqrt[3]{2}$$ with coefficients from $$\mathbb{Q}$$.  Thus the dimension of the new structure over the rationals is 6.
 
-Let's set $$K = \mathbb{Q}$$, $$L = \mathbb{Q}[\sqrt[3]{2}]$$, and $$M = \mathbb{Q}[\sqrt[3]{2}, \omega\sqrt[3]{2}]$$.  Since $$\omega \in M$$ we know there's also a subfield of $M$ that contains the rationals and $$\omega$$ (dimension 2).  Are there any other subfields?  (Maybe some combination of $$\omega$$ and $$\sqrt[3]{2}$$?)
+Since $$\omega$$ is a member of $$\mathbb{Q}[\sqrt[3]{2}, \omega\sqrt[3]{2}]$$ we know there's also a subfield of $M$ that contains the rationals and $$\omega$$ (dimension 2).  Are there any other subfields?  (Maybe some combination of $$\omega$$ and $$\sqrt[3]{2}$$?)
 
-It turns out there's this great theorem that helps explain the structure of fields and their subextensions. Let <span>$$M$$</span> be a field extension of $$L$$ and $$L$$ a field extension of $$K$$.
+It turns out there's this great theorem that helps explain the structure of fields and their subextensions. Let $$K$$ be a field, let $$L$$ an extension of $$K$$ and $$M$$ an extension of $$L$$.  Then:
 
 <div class="theorem" text="Tower Law">
 $$[M : K] = [M : L][L : K]$$
