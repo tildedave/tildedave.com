@@ -52,7 +52,7 @@ So, even though we constructed $$M$$ by bolting on $$\sqrt[3]{2}$$ and then $$\o
 
 Field extensions are a way that you take one well-behaved structure and get another well-behaved structure.  Irreducible polynomials are key to this as they express relationships that aren't satisfied in the original structure but do end up satisfied in the new structure.
 
-Field extensions actually end up being a really powerful tool - their theory can be used to show the impossibility of angle trisection with a compass and straightedge.  The basic idea: start with numbers 0 and 1, allow constructing numbers in the complex plane through compass and straightedge.  The only numbers that are constructible this way exist in field extensions that have dimension $$2^n$$ over the rationals.  There exists an angle that in order to trisect, you would need to construct $$\sqrt[3]{2}$$ which has dimension 3 over the rationals.  Therefore general trisection is impossible.
+Field extensions actually end up being a really powerful tool - their theory can be used to show the impossibility of angle trisection with a compass and straightedge.  The basic idea: start with numbers 0 and 1, allow constructing numbers in the complex plane through compass and straightedge.  The only numbers that are constructible this way exist in field extensions that have dimension $$2^n$$ over the rationals.  However, to trisect the angle $$2\pi/3$$, we would need to be able to construct a number ($$\cos {2\pi / 9}$$) that exists in a field extension of dimension 3 over the rationals.  Therefore general trisection is impossible.
 
 ## References
 
