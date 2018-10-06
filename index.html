@@ -19,7 +19,14 @@ layout: default
 </div>
 
 <article>
-  <p>I began programming when I was 8 writing text adventures in GWBASIC on my school's computer.  The day job tends to be some combination of JavaScript, Python, and Java - all objectively better technologies, all far less fun.</p>
+  {% markdown %}
+Software person in the Bay Area.  I moved out here in 2014 after living in Blacksburg, Virginia for five years, which I had moved to after finishing up grad school at Penn State.
+
+I began programming when I was 8 writing text adventures in GWBASIC on my school's computer.  The [day job](https://chartio.com/) tends to be some combination of JavaScript, Python, and Java - all objectively better technologies, all far less fun.
+
+In my spare time I backpack, read, and program.  A favorite personal project is to write programs that play chess and I've written two so far: [one in C++](https://github.com/tildedave/apep-chess-engine) and [one in Golang](https://github.com/tildedave/ra-chess-engine).  Over the last year I've been trying to learn more abstract algebra and number theory.
+  {% endmarkdown %}
+  <p></p>
 
   <h1>Recent Blog Articles</h1>
     {% for post in site.posts limit:5 %}
@@ -32,15 +39,21 @@ layout: default
     {% endif %}
     {% endfor %}
 
-  <h1>Books I've Read This Year (2018)</h1>
+  {% markdown %}
+
+# Books I've Read This Year (2018)
+
+* _Misquoting Jesus_, Bart D. Ehrman
+* _Dune Messiah_, Frank Herbert
+* _Dune_, Frank Herbert
+* _The Dispossessed_, Ursula Le Guin
+* _The Left Hand of Darkness_, Ursula Le Guin
+* _A Distant Mirror_, Barbara Tuchman
+* _Why The West Rules For Now_, Ian Morris
+
+  {% endmarkdown %}
+  <h1></h1>
   <ul>
-    <li><i>Misquoting Jesus</i>, Bart D. Ehrman</li>
-    <li><i>Dune Messiah</i>, Frank Herbert</li>
-    <li><i>Dune</i>, Frank Herbert</li>
-    <li><i>The Dispossessed</i>, Ursula Le Guin</li>
-    <li><i>The Left Hand of Darkness</i>, Ursula Le Guin</li>
-    <li><i>A Distant Mirror</i>, Barbara Tuchman</li>
-    <li><i>Why The West Rules For Now</i>, Ian Morris</li>
   </ul>
 
   <div class="footer">
