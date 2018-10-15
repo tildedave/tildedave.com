@@ -79,3 +79,18 @@ table {
 .theorem[text]:before {
   content: "Theorem (" attr(text) ") ";
 }
+
+.lemma {
+  display: block;
+  font-style: italic;
+}
+
+.lemma:before {
+  content: "Lemma. ";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lemma[text]:before {
+  content: "Lemma (" attr(text) ") ";
+}
