@@ -1,0 +1,106 @@
+---
+layout: post
+title: "The Joy of Algebraic Number Theory"
+comments: true
+---
+
+Algebraic number theory is the study of how prime numbers behave in field extensions of the rational numbers.  For example, 13 is a prime number in the integers.  However, in the field extension $$\mathbb{Q}[i]$$, 13 is a product of two irreducible elements $$(2 + 3i)$$ and $$(2 - 3i)$$, and so is no longer a "prime".
+
+Algebraic number theory grew out of Gauss and other mathematicians looking for a way to extend quadratic reciprocity (which numbers can be written as $$x^2$$ mod $$p$$?) to higher dimensions.  Adding new types of numbers allowed them to investigate these problems in fuller generality.  Later, Kummer and others expanded its techniques in a failed attempt to solve Fermat's Last Theorem ($$x^p + y^p = z^p$$ has no integer solutions for $$p > 2$$).  While these techniques did not succeed, it resulted in them developing out the theory of cyclotomic fields (the field extensions of the form $$\mathbb{Q}[\zeta]$$, $$\zeta$$ being a complex root of unity).
+
+I started learning algebraic number theory this year and I wanted to write a bit about its core concepts and convey some of its flavor, and the reasons I think it's an interesting topic.  There are a lot of high quality resources on the internet that I've used to augment my main resource, which has been the textbook _Number Fields_ by Daniel Marcus.
+
+## Definitions
+
+Let $$K$$ by a finite field extension of $$\mathcal{Q}$$, i.e. there is some set $$\{ e_1, \ldots, e_n \in K \}$$ that forms a basis of $$K$$ over $$\mathbb{Q}$$.  Call this type of extension a _number field_.  Every number field $$K$$ has a subring $$\mathcal{O_K}$$ of the elements which are solutions to polynomials with integer coefficients: $$a_n x^n + a_{n-1} x^{n-1} + \ldots + a_0$$ where each of the $$a_i \in \mathbb{Z}$$.  (These are also called _algebraic integers_).
+
+In a _quadratic_ field extension $$\mathbb{Q}[\sqrt{d}]$$, you take the rational numbers adjoined with the square root of some number $$d$$ m (e.g. $$\sqrt{3}$$, $$\sqrt{6}$$, etc), the algebraic integers end up being $$\mathbb{Z}[\sqrt{d}]$$ if $$d \equiv 2, 3\ (4)$$, and $$\mathbb{Z}[\frac{1 + \sqrt{d}}{2}]$$ if $$d \equiv 1\ (4)$$.
+
+_Cyclotomic number fields_ are the rational numbers adjoined with $$\zeta_{m}$$ for some $$m$$.  The algebraic integers for a cyclotomic field $$\mathbb{Q}[\zeta_m]$$ end up just being $$\mathbb{Z}[\zeta_m]$$.
+
+We can use Sage to compute an basis for the ring of integers for various field extensions (called an _integral basis_).  (The `a` that shows up is each field's generating element.)
+
+```
+sage: K = QuadraticField(14)
+sage: K.integral_basis()
+[1, a]
+sage: K = QuadraticField(17)
+sage: K.integral_basis()
+[1/2*a + 1/2, a]
+sage: K = CyclotomicField(13)
+sage: K.integral_basis()
+[1, zeta13, zeta13^2, zeta13^3, zeta13^4, zeta13^5, zeta13^6, zeta13^7, zeta13^8, zeta13^9, zeta13^10, zeta13^11]
+```
+
+The above examples are a little deceiving in their lack of complexity, as the ring of integers for the field extension always has the form $$\mathbb{Z}[\alpha]$$ for some $$\alpha$$.  However, this is not always the case - [a counterexample](https://math.stackexchange.com/questions/912148/why-a-particular-ring-of-integers-is-not-generated-by-a-single-element) is the field extension $$\mathbb{Q}$$ extended by a root $$\alpha$$ of the cubic equation $$x^3 + x^2 - 2x + 8$$.
+
+```
+sage: K.<a> = QQ.extension(x^3 + x^2 - 2*x + 8)
+sage: K.integral_basis()
+[1, 1/2*a^2 + 1/2*a, a^2]
+```
+
+Computing an integral basis turns out to be little trickier than computing the basis of a field extension.  See [5] for more information.
+
+## Lack of Unique Factorization
+
+One of the things that makes the integers really nice to work with is that every number can be broken down into a unique product of prime elements.  For example, the number $$1176 = 2^3 \cdot 3 \cdot 7^2$$.  Other than choosing negative numbers, there aren't any alternative factorizations of $$1176$$.
+
+This fundamental property of number theory may fail in a ring of integers.  For example, let $$K = \mathbb{Q}[\sqrt{-5}]$$.  Then $$6 = 2 \cdot 3$$ but also $$6 = (1 + \sqrt{-5})(1 - \sqrt{-5})$$.
+
+In order to solve this difficulty, we start operating on _ideals_.  Ideals (denoted by the symbol $$I$$) are subsets of a mutiplicative ring that are internally closed under addition (so for any two elements $$f, g \in I$$, $$f + g \in I$$) and are closed under multiplication from the rest of the ring (so for any element $$f \in I$$ and an element from the broader ring $$r \in R$$, $$r \cdot f \in I$$).
+
+It's not too difficult to see that the ideals of the integers $$\mathbb{Z}$$ are all the multiples of some prime.  However, in the ring of integers, ideals may be the product of multiple generating elements, written $$I = (i_0, \ldots, i_n)$$.
+
+Given two ideals $$I, J$$, you can define the ideal $$I \cdot J$$ to be the ideal generated by every element $$i \in I$$ multiplied by every element $$j \in J$$.
+
+Seen through the lens of ideals, the ring of integers admits unique factorization, except that now we're not factoring numbers into a product of primes, we're factoring ideals into a product of _prime ideals_.
+
+Let's ask Sage to shed some light on the situation where $$F = \mathbb{Q}[\sqrt{-5}]$$:
+
+```
+sage: K = QuadraticField(-5)
+sage: K.factor(6)
+(Fractional ideal (2, a + 1))^2 * (Fractional ideal (3, a + 1)) * (Fractional ideal (3, a + 2))
+sage: I, J1, J2 = [x[0] for x in K.factor(6)]
+sage: I * J1
+Fractional ideal (a + 1)
+sage: I * J2
+Fractional ideal (-a + 1)
+sage: I*I
+Fractional ideal (2)
+sage: J1*J2
+Fractional ideal (3)
+```
+
+To summarize, in the ring of integers $$\mathcal{O_F}$$, we have the following factorizations:
+
+$$
+\begin{eqnarray*}
+(6) &=& (2, \sqrt{-5} + 1)^2 \cdot (3, \sqrt{-5} + 1) \cdot (3, \sqrt{-5} + 2) \\
+(2) &=& (2, \sqrt{-5} + 1)^2 \\
+(3) &=& (3, \sqrt{-5} + 1) \cdot (3, \sqrt{-5} + 2)\\
+(1 + \alpha) &=& (2, \sqrt{-5} + 1) \cdot (3, \sqrt{-5} + 1)\\
+(1 - \alpha) &=& (2, \sqrt{-5} + 1) \cdot (3, \sqrt{-5} + 2)\\
+\end{eqnarray*}
+$$
+
+Above, you can also see that ideal $$(2, \sqrt{-5} + 1)$$ is _non-principal_ - that is, there is no element $$\alpha$$ such that generates the ideal $$(2, \sqrt{-5} + 1)$$.  In math-speak this means that the ring of integers may not be a _Principal Ideal Domain_ (abbreviated PID).  (This differs from the regular integers $$\mathbb{Z}$$, where every ideal is the multiples of some prime number.)  It's not even known if there are infinitely many quadratic extensions (degree 2) with a ring of integers that's a PID.
+
+## Personal Reflection
+
+So obviously, I find this stuff pretty interesting.  I can only really explain this in contrast to my reaction to mathematical logic, a subject I respect more than I love.  Much of what you learn in mathematical logic is not just the history of the results, but the history of how the results are interpreted - many of the key results in logic end up having a political feel, wherein the ability to make a mathematical construction comes with some statement about the value of your assumptions.
+
+For example, one of the main problems in logic is the Continuum Hypothesis (is the cardinality of the real line the first uncountable infinity?).  Gödel showed you could construct models of set theory where it was true.  Cohen showed it was false, using an elaborate technique - you blow up an $$\aleph_0$$-sized model of ZFC Set Theory into an $$\aleph_2$$-sized model, then show that the statement "This is an $$\aleph_2$$-sized set", provable in your new model, relativizes back to 'real mathematics' because "This is an $$\aleph_2$$-sized set" is a $$\Pi_{0}^2$$ statement.
+
+Whatever this says, it has a _meaning_.  Should we change our assumptions to disallow this result?  Should we say the Continuum Hypothesis is true anyways?  Or false anyways?  What does uncountable infinity even _mean_?  Should we use other axiom systems than ZFC?  Should we just ditch all this infinity stuff in the first place?
+
+In contrast, the objects of study in algebra feel familiar (the rational numbers!  irreducible polynomials!), useful in their own right (finite fields and their factorings are used in cryptosystems), and accessible (tools like Sage allow you to explore your understanding without needing your advisor's intuition to walk you through the easy stuff).  Results don't trigger this metaphysical quandry, and the clear motivation from simple Diophantine equations over the integers helps me stay engaged.  These problems motivated these mathematical greats (Gauss, Euler, and Fermat), and years later I get to re-orient my brain so that I can understand the issues to which they devoted their lives.
+
+## References
+
+1. [Algebraic Number Theory, a Computational Approach](https://wstein.org/books/ant/) by William Stein
+2. [Algebraic Number Theory](http://www.jmilne.org/math/CourseNotes/ant.html) by J.S. Milne
+3. [A Course In Algebraic Number Theory](https://faculty.math.illinois.edu/~r-ash/ANT.html) by Richard Ash
+4. [Basic Algebraic Number Theory](https://ctnt-summer.math.uconn.edu/schedules-and-abstracts-2018/) from CTNT 2018, Liang Xiao,
+5. [Computing Integral Bases](https://pdfs.semanticscholar.org/ac59/767929639347bb2d0ef52621d973ad743af8.pdf), John Paul Cook.
