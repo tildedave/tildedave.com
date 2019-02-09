@@ -1,10 +1,10 @@
 // Jekyll does not generate the right markup
 // TODO figure out how to make Bootstrap build scale things down
 
-$font-size-h1: 24px;
-$font-size-h2: 22px;
-$font-size-h3: 20px;
-$font-size-base: 18px;
+$font-size-h1: 20px;
+$font-size-h2: 18px;
+$font-size-h3: 18px;
+$font-size-base: 16px;
 
 @import "variables";
 @import "bootstrap";
