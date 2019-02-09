@@ -8,7 +8,7 @@ This is a solution to Exercises 4.6 and a partial solution to exercise 4.7 in Da
 
 Let $$K = \mathbb{Q}[\sqrt{m}, \sqrt{n}]$$ be a field extension of the rational numbers $$\mathbb{Q}$$.  $$K$$ has degree 4 and contains three quadratic subfields: $$\mathbb{Q}[\sqrt{m}]$$, $$\mathbb{Q}[\sqrt{m}]$$, and $$\mathbb{Q}[\sqrt{k}]$$, where $$k = \frac{mn}{\text{gcd}(m, n)^2}$$.  The Galois group of this field extension is the Klein 4-group, which has three normal subgroups.  Let $$p$$ be a prime of $$\mathbb{Z}$$.  Take $$R$$ to be the ring of integers of $$K$$.
 
-Let $$P$$ be a prime ideal with $$Q$$ a prime lying over $$Q$$.  If $$K$$ is a normal extension of the rationals with Galois Group $$G$$, then the decomposition group $$D$$ of $$P$$ is the subgroup of $$G$$ containing all $$\sigma$$ such that $$\sigma(Q) = Q$$.  The inertia group $$E$$ for a prime ideal $$P$$ is the subgroup of $$G$$ containing all $$\sigma$$ such that $$\sigma(\alpha) \equiv \alpha\ \text{mod}\ Q$$ for $$\alpha$$ an algebraic integer of $$K$$.
+Let $$P$$ be a prime ideal with $$Q$$ a prime lying over $$P$$.  If $$K$$ is a normal extension of the rationals with Galois Group $$G$$, then the decomposition group $$D$$ of $$P$$ is the subgroup of $$G$$ containing all $$\sigma$$ such that $$\sigma(Q) = Q$$.  The inertia group $$E$$ for a prime ideal $$P$$ is the subgroup of $$G$$ containing all $$\sigma$$ such that $$\sigma(\alpha) \equiv \alpha\ \text{mod}\ Q$$ for $$\alpha$$ an algebraic integer of $$K$$.
 
 ## Background: Factoring in Quadratic Fields
 
