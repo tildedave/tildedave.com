@@ -20,9 +20,9 @@ Let $$p$$ be an odd prime.  If $$p \mid m$$, then $$p$$ ramifies.  If $$m$$ is a
 
 ## $$p$$ ramified in every subfield
 
-If $$p$$ is ramified in each of the subfields then $$p$$ is totally ramified in $$K$$.  $$p$$ being totally ramified implies that the both the decomposition and inertia groups of $$p$$ over $$R$$ are the entire Galois group.
+If $$p$$ is ramified in each of the subfields then $$p$$ is totally ramified in $$K$$.  $$p$$ being totally ramified implies that the both the decomposition and inertia groups of $$p$$ over $$R$$ are the entire Galois group.  To find an example we need to find $$m, n$$ such that $$p$$ divides both $$m$$ and $$n$$ along with the $$k$$ expression above.
 
-An example over $$\mathbb{Q}$$ is $$m = 2$$ and $$n = 3$$, so $$K = \mathbb{\sqrt{2}, \sqrt{3}}$$.  $$K$$ then contains the subfields $$K_1 = \mathbb{Q}[\sqrt{2}]$$, $$K_2 = \mathbb{Q}[\sqrt{3}]$$, and $$K_3 = \mathbb{Q}[\sqrt{6}]$$ with corresponding ring of integers $$R_1, R_2, $R_3$$ and discriminants $$8, 12, 24$$.  The regular prime $$p = 2$$ ramifies in each of these subfields.
+Take $$K = \mathbb{Q}[\sqrt{2}, \sqrt{3}]$$, so $$m = 2$$ and $$n = 3$$.  $$K$$ then contains the subfields $$K_1 = \mathbb{Q}[\sqrt{2}]$$, $$K_2 = \mathbb{Q}[\sqrt{3}]$$, and $$K_3 = \mathbb{Q}[\sqrt{6}]$$ with corresponding ring of integers $$R_1, R_2, R_3$$ and discriminants $$8, 12, 24$$.  The prime $$p = 2$$ ramifies in each of these subfields.
 
 We can confirm this in Sage:
 
