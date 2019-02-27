@@ -6,7 +6,7 @@ markdown: kramdown
 gems: ['jekyll-paginate']
 
 
-picture:        "/images/me-pebblebeach.png"
+picture:        "/images/me-glasses.jpg"
 twitter:        "https://twitter.com/tildedave"
 github:         "https://github.com/tildedave"
 linkedin:       "http://www.linkedin.com/pub/dave-king/29/ba1/734"
