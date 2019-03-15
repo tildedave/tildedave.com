@@ -4,7 +4,7 @@ title: 'I Am No Longer a Gamer'
 comments: true
 ---
 
-It's been over a year since I seriously spent any time playing a video game.  Video games have always been a force in my life - sometimes positive, often negative.  I got obsessed with video games early; my parents are convinced that I learned to spell through the King's Quest franchise, the early entries of which required you type out the action that your character is doing.  I was a very motivated 6 year old.
+It's been over a year since I spent any real time playing a video game.  Video games have always been a force in my life - sometimes positive, often negative.  I got obsessed with video games early; my parents are convinced that I learned to spell through the King's Quest franchise, the early entries of which required you type out the action that your character is doing.  I was a very motivated 6 year old.
 
 In grad school I was one of the many who spent entirely too much time in World of Warcraft.  I was seriously depressed in graduate school, for extremely typical reasons.  Graduate school gives you very unclear goals beyond "finish your thesis" and the sense of progression was not there for me in my last two years.  I would be submitting papers to conferences and if the paper got in, I'd be closer to finishing my thesis ... but if my paper didn't get in, we'd have to retool it and submit it to a different conference.  Maybe it would get in there and then I'd be able to finish, but if not... another six months.  I escaped from this hell into a world with clear systems and a sense of progression, where I got pretty good at pumping out a bunch of damage to raid bosses.  This made me a lot more useful to my guild than whatever I was doing for my thesis projects on a week-to-week basis.
 
