@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Why I've Stopped Playing Video Games'
+title: "Why I've Stopped Playing Video Games"
 comments: true
 ---
 
