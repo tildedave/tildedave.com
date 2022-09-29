@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Scaling Out Tilt's Nightwatch Tests with Magellan"
+is_unlisted: 1
 ---
 
 I've talked [in the past](http://www.slideshare.net/tildedave/nightwatch-at-tilt) about how Tilt rebuilt our Selenium suite using [Nightwatch](https://www.nightwatchjs.org), a JavaScript interface to Selenium WebDriver.  Our suite is now up to about 100 end-to-end user scenarios - this provides a good test of our overall functionality that we can use to certify that Tilt.com works before promoting builds from staging to production.
@@ -66,12 +67,12 @@ Running 78 tests with 8 workers with phantomjs
 
 ....
 
-(73 / 78) <-- Worker 1 PASS  test/user_menu_spec.js @phantomjs  
-(74 / 78) <-- Worker 4 PASS  test/recontributions_spec.js @phantomjs  
-(75 / 78) <-- Worker 7 PASS  test/profile_settings_spec.js @phantomjs  
-(76 / 78) <-- Worker 5 PASS  test/search_spec.js @phantomjs  
-(77 / 78) <-- Worker 3 PASS  test/reminders_remind_email_invite_spec.js @phantomjs  
-(78 / 78) <-- Worker 6 PASS  test/reminders_remind_all_spec.js @phantomjs  
+(73 / 78) <-- Worker 1 PASS  test/user_menu_spec.js @phantomjs
+(74 / 78) <-- Worker 4 PASS  test/recontributions_spec.js @phantomjs
+(75 / 78) <-- Worker 7 PASS  test/profile_settings_spec.js @phantomjs
+(76 / 78) <-- Worker 5 PASS  test/search_spec.js @phantomjs
+(77 / 78) <-- Worker 3 PASS  test/reminders_remind_email_invite_spec.js @phantomjs
+(78 / 78) <-- Worker 6 PASS  test/reminders_remind_all_spec.js @phantomjs
 
 ============= Suite Complete =============
 
@@ -107,7 +108,7 @@ client
 }
 ```
 
-### Split Your Tests Into Separate Files 
+### Split Your Tests Into Separate Files
 
 Magellan parallelizes your test suite at the test file level.  Our test suite used to have many different logically-grouped test cases inside of individual test files (for example, a test case verifying that the "install app" banner displayed, as well as a test case verifying that it could be closed).  On refactoring to use Magellan, we split these out into separate files so that they could be run in parallel to one another.  This makes sure that individual test files will run quickly - a test file that takes 5 minutes to run through all the different test cases will just take up a worker that could be used to run other tests.
 

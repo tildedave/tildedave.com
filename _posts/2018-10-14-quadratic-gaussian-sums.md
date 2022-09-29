@@ -2,6 +2,7 @@
 layout: post
 title: "Quadratic Gaussian Sums"
 comments: true
+is_unlisted: 1
 ---
 
 Let $$p$$ be an odd prime.  I'll now show how sums over complex roots of unity can be used to show the law of _quadratic reciprocity_, which states that $$p$$ being a square mod $$q$$ is related to whether $$q$$ is a square mod $$p$$.

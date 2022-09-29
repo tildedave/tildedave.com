@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 'Fix-It Fridays'
+is_unlisted: 1
 ---
 
 This last summer I noticed the team was getting into a bit of a rut.  We were working towards a major product launch.  As a consumer-facing product there's always been an internal culture that everything user-facing had to be _perfect_.
 
-Okay, perfection is the goal.  But how can we accomplish perfection?  One challenge we had was the visual aesthetic was clearly understood by the product and design team, but less understood by the engineering team.  We'd miss the wrong fonts, the wrong margins on visual elements, or gloss over strange interactions that still technically worked. 
+Okay, perfection is the goal.  But how can we accomplish perfection?  One challenge we had was the visual aesthetic was clearly understood by the product and design team, but less understood by the engineering team.  We'd miss the wrong fonts, the wrong margins on visual elements, or gloss over strange interactions that still technically worked.
 
 These defects would end up on a list somewhere - some of these would be ticketed or raised to my attention.  All of them would have a similar effort (an hour or so of work), and I could fudge a user impact number to figure out priority.  Still, this management was a lot of work, and while some people on the team really liked churning through the tickets, it felt like something in our process was a bit broken.  Adding to the backlog was that for a long while the apps hadn't been looked at with the same visual eye, and so there were a number of older screens with a bunch of accumulated visual debt.  These got added to the list with the rest of them.
 

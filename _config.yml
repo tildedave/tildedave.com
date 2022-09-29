@@ -6,7 +6,7 @@ markdown: kramdown
 gems: ['jekyll-paginate']
 
 
-picture:        "/images/me-glasses.jpg"
+picture:        "/images/me-party.jpg"
 twitter:        "https://twitter.com/tildedave"
 github:         "https://github.com/tildedave"
 linkedin:       "http://www.linkedin.com/pub/dave-king/29/ba1/734"
@@ -14,5 +14,5 @@ email:          "tildedave_at_gmail_dot_com"
 rss:            "/feed.xml"
 
 name:           tildedave.com
-description:    Website of Dave King, Bay Area Software person
+description:    Website of Dave King, yet another software person.
 url:            http://www.tildedave.com

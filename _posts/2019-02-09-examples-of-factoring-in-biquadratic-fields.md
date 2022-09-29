@@ -2,6 +2,7 @@
 layout: post
 title: "Examples of Factoring in Biquadratic Fields"
 comments: true
+is_unlisted: 1
 ---
 
 This is a solution to Exercises 4.6 and a partial solution to exercise 4.7 in Daniel A. Marcus, _Number Fields_.

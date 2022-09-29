@@ -2,6 +2,7 @@
 layout: post
 title: "The Lights That Failed: European International History 1919-1933"
 is_personal: "1"
+is_unlisted: 1
 ---
 
 The Great War killed 17 million people, wounded 20 million more, and left psychological trauma on victor and vanquished alike.  At the Paris peace conference in 1919, Britain, France, and the United States were tasked to create a new international order that would prevent something like this from ever happening again.  Unfortunately, it didn't work.

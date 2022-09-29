@@ -2,6 +2,7 @@
 layout: post
 title: "Book Review - A Distant Mirror"
 is_personal: "1"
+is_unlisted: 1
 ---
 
 The middle ages weren't a pleasant time to be alive.  The Black Death killed half of the European population, out-of-control mercenary companies ravaged the land, peasants were exploited on every level by the nobility.  In _A Distant Mirror_, Barbara Tuchman (author of _The Guns of August_ on the runup to the Great War) walks through what life was like, with an eye towards the politics of the nobility and a focus on France in the midst of the Hundred Years war.

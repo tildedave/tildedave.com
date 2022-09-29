@@ -2,6 +2,7 @@
 layout: post
 title: "Trying To Define What I Consider 'Frontend Polish'"
 comments: true
+is_unlisted: 1
 ---
 
 * Page loads quickly - should be able to serve the initial page in < 100ms

@@ -2,6 +2,7 @@
 layout: post
 title: "Book Review: Children of the Revolution: The French, 1799 - 1914"
 is_personal: "1"
+is_unlisted: 1
 ---
 
 Just finished up _Children of the Revolution_, a book covering the history of France from the end of the French revolution (1799, with Napoleon in charge) to the start of the Great War (1914).  The 19th century is one of my favorite periods in history due to the amount of social change, the emergence of mass politics, and the formation of an industrial working class.  The reason I read this book was that I was interested to learn a bit more about how France dealt with this period of change, especially after having read a book on Germany (_A History of Modern Germany, 1800-2000_, Martin Kitchen) which overlapped with the same period.

@@ -2,6 +2,7 @@
 layout: post
 title: "The Joy of Algebraic Number Theory"
 comments: true
+is_unlisted: 1
 ---
 
 Algebraic number theory is the study of how prime numbers behave in field extensions of the rational numbers.  For example, 13 is a prime number in the integers.  However, in the field extension $$\mathbb{Q}[i]$$, 13 is a product of two irreducible elements $$(2 + 3i)$$ and $$(2 - 3i)$$, and so is no longer a "prime".

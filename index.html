@@ -9,16 +9,16 @@ layout: default
 
 <article>
   {% markdown %}
-Hi there, I'm Dave, a software person.  I grew up in New Jersey, went to the University of Illinois at Urbana-Champaign, then went to Penn State for grad school.  I've lived in Blacksburg, Oakland, and now I live in Durham, North Carolina.
+Hi there, I'm Dave, a software guy.  University of Illinois class of 2003, finished my PhD thesis at Penn State in 2009.  I live in Durham, North Carolina.  Husband, father, geek.
 
-I'm a long-time programmer - I began programming when I was 8 writing text adventures in GWBASIC on my school's computer.  In junior high I wrote text adventure games in QBASIC.  In high school I wrote some RPG frameworks in Visual Basic.  In college I wrote MUSHcode for PennMUSH including the guts of an extremely involved space system.  In grad school I wrote a [chess engine](https://github.com/tildedave/apep-chess-engine).  The [day job](https://chartio.com/) tends to be some combination of JavaScript, Python, and Java - all objectively better technologies, all far less fun.
+I'm a long-time programmer - I began programming when I was 8 writing text adventures in GWBASIC on my school's computer.  In junior high I wrote text adventure games in QBASIC.  In high school I wrote some RPG frameworks in Visual Basic (just the framework, I never finished any games).  In college I wrote MUSHcode for PennMUSH including the guts of an extremely involved space system (in true MUSH fashion, I'm pretty sure it never had any users).  In grad school I got pretty burned out and wrote a [chess engine](https://github.com/tildedave/apep-chess-engine) (that crashed a bunch).  Nowadays I work from home for [Atlassian](https://www.atlassian.com/).
 
-In my spare time I <a href="reading.html">read</a>, exercise, and backpack.  Some out-of-work hobbies are learning number theory and hacking on a [new chess engine](https://github.com/tildedave/ra-chess-engine).
+I'm a new father, so my current main focus is absorbing liquids into my clothes.  When I have some time I try to learn number theory, futz with [cryptopals](https://github.com/tildedave/cryptopals-set8), and hack on a [new chess engine](https://github.com/tildedave/ra-chess-engine).  I'm a [Dinosaur Jr. superfan](https://www.youtube.com/watch?v=FGDtxuvfWKA).
 
   {% endmarkdown %}
   <p></p>
 
-  <h1>Recent Blog Articles</h1>
+  <h1>Recent Stuff</h1>
     {% for post in site.posts limit:5 %}
     {% if post.is_unlisted %}
     {% else %}
@@ -34,6 +34,6 @@ In my spare time I <a href="reading.html">read</a>, exercise, and backpack.  Som
   </ul>
 
   <div class="footer">
-    <a rel="posts" href="/posts.html">Blog Archives</a> | <a href="{{ site.rss }}">RSS</a>.
+    <a rel="posts" href="/posts.html">Archives</a> | <a href="{{ site.rss }}">RSS</a>.
   </div>
 </article>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Frontend Experiments with Optimizely and Flux'
+is_unlisted: 1
 ---
 
 At [Tilt](https://www.tilt.com), our growth team uses [Optimizely](https://www.optimizely.com) to do light-weight experiments like inject text into the navbar, change styles, or adjust static pages to test out different designs.  Optimizely allows you to easily A/B test your website by injecting client-side JavaScript to do things like inject inline styles or change button text.  However, our engineers also use Optimizely for richer experiments - showing completely different versions of the homepage, updating the behavior of a JavaScript widget, and rolling out new product features to employees first for testing.  In this post I'll walk through our experiment setup and show how we use [React.js](https://facebook.github.io/react/) together with the [Flux architecture](https://facebook.github.io/flux/) to build an application whose _behavior_ can be easily changed through Optimizely.

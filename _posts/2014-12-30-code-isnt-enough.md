@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Code Isn't Enough"
+is_unlisted: 1
 ---
 
 Words matter.  In the Agile community, Pragmatic Dave recently wrote about [Agile is Dead](http://pragdave.me/blog/2014/03/04/time-to-kill-agile/) and gave a similarly-themed [talk](http://www.thoughtworks.com/talks/the-death-of-agile).  He argues that while "Agile" has become overrun with people looking to exploit noun _agile_ as a the buzzword for their consultancies, its core values should still be embraced as an _adjective_.  In the DevOps community, Seth Vargo recently wrote on the [10 Myths of DevOps](https://sethvargo.com/the-ten-myths-of-devops/) - like the agile movement, the term "DevOps" is in the process of being co-opted by people looking to sell something.

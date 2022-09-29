@@ -2,6 +2,7 @@
 layout: post
 title: "Why I've Stopped Playing Video Games"
 comments: true
+is_unlisted: 1
 ---
 
 It's been over a year since I spent any real time playing a video game.  Video games have always been a force in my life - sometimes positive, often negative.  I got obsessed with video games early; my parents are convinced that I learned to spell through the King's Quest franchise, the early entries of which required you type out the action that your character is doing.  I was a very motivated 6 year old.

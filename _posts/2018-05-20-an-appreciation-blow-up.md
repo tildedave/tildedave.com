@@ -2,6 +2,7 @@
 layout: post
 title: "An Appreciation - Blow-Up"
 is_personal: "1"
+is_unlisted: 1
 ---
 
 _Blow-Up_ is Michalengelo Antonioni's first English film and was released at the end of 1966.  The plot is quickly summarized: in 1960s London, a professional photographer (Thomas) tries to escape his day-to-day by taking pictures in a nearby park.  There he encounters a couple and takes their photos from a distance.  He is confronted by a woman who demands he surrender his roll of film, and she persists in following him to his studio to try to get it back.  Later he develops the pictures and notices a little detail in one of them - upon magnifying it (thus given name to the title), he discovers in the grainy detail of his photographs a potential murder plot.

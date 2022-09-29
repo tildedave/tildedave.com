@@ -2,6 +2,7 @@
 layout: post
 title: "Nostalgia: Mr. Rogers and Mad Men's Carousel"
 is_personal: "1"
+is_unlisted: 1
 ---
 
 One of the most famous scenes in AMC's _Mad Men_ comes at the end of Season 1.  Don Draper's been having a hard time of things lately - his marriage is falling apart and his relationship with his coworkers has taken a major downwards trend.  To keep those plates spinning, Don gives the pitch of a lifetime.
