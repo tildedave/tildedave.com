@@ -2,6 +2,7 @@
 layout: post
 title: 'The Joy of Field Extensions'
 comments: true
+is_hidden: true
 ---
 
 One of my projects this year was learning Galois Theory, a subject in abstract algebra that goes into the structure of the roots of polynomial equations.  In high school I learned that $x^2 + 1 = 0$ had no solutions in the real numbers, but - good news! (massive leap of faith here) there's some number $i$ so that $i^2 + 1 = 0$ is satisfied.  Oh and by the way, $(-i)^2 + 1 = 0$ also.

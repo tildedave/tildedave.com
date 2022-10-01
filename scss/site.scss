@@ -13,22 +13,9 @@ h1, h2, h3 {
   color: #000;
 }
 
-.intro {
-  padding-top: 10px;
-  margin-bottom: 20px;
-
-  color: #999;
-
-  & > * {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .lead {
-    margin-bottom: 0;
-  }
-
+.intro-picture {
+  width: 20%;
+  margin: 20px;
 }
 
 @media screen and (min-width: 480px) {
