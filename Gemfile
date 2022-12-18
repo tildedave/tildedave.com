@@ -12,4 +12,4 @@ gem 'safe_yaml', '~> 1.0.4'
 gem 'redcarpet'
 gem 'jekyll-paginate'
 gem 'pygmentize'
-gem "ffi", ">= 1.9.24"
+gem 'webrick'
