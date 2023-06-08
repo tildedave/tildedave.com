@@ -1,0 +1,21 @@
+---
+layout: post
+title: "2022: In Review"
+---
+
+Well, I became a dad this year.  We were very fortunate that Cora's been a happy and healthy little baby; she arrived more or less when we expected it and the new parent experience has been easy enough.  My days revolve around her schedule.  It's been a wonderful experience even if certain moments can be challenging.  I've just started three months of parental leave where I'll move into the primary caregiver role.  Looking forward to bbeing able to devote this kind of time and energy to my family, and I'm fortunate my work is so generous with leave.
+
+<img class="img-responsive" style="max-width:520px" src="/images/cora-7-months.jpg" alt="My daughter Cora, aged 7 months" />
+
+Work-wise things are good.  I still work at Atlassian.  After a few years of trying out people leadership I realized I didn't particularly enjoy it, but that left me with a bit of a hole as to what I want to be doing and how I want my career to grow.  I've leaning more into my principal engineering role and have been reading some books to try to get a sense of what the role looks like at different companies; [The Staff Engineer's Path](https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/) and [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book).  We've also managed to launch the [Atlassian Analytics](https://www.atlassian.com/platform/analytics) product into Open Beta.  Pretty good outcome from the Chartio acquisition.
+
+I was able to still read a bit this year, both before and after Cora's arrival.  Highlights:
+* Brandon Sanderson's [Oathbringer](https://us.macmillan.com/books/9781250297143/oathbringer).  Probably my favorite of the Stormlight Archive so far.  This was a really intense fantasy experience.  Nine months after finishing it I'm still sort of amazed by the "twist" revealed in this book.
+* Timothy Synder's [Bloodlands](https://www.timothysnyder.org/books/bloodlands).  I don't think I ever read a real history of the Holocaust before this.  (I'm not counting any of the "required reading" in high school.)  The cruelty of the Hitler and Stalin regimes is hard to imagine but important to still reckon with.
+* Christopher Clark's [The Sleepwalkers](https://www.harpercollins.com/products/the-sleepwalkers-christopher-clark?variant=32121973735458).  I've read the story of how World War I broke out a few times now but Clark's book is the first time where the assassination of an Austrian archduke could plausily lead to continent war (vs being a pretext for actors who had decided what to do ahead of time).
+
+Other books: [Stoner](https://www.goodreads.com/book/show/166997.Stoner) (good), [The Sixth Extinction](https://us.macmillan.com/books/9781250062185/thesixthextinction) (magazine articles: the book), [The Pursuit of Love](https://www.goodreads.com/book/show/835458.The_Pursuit_of_Love) (alas, didn't grab me), [Empire of Liberty: A History of the Early Republic, 1789-1815](https://www.goodreads.com/book/show/550931.Empire_of_Liberty) (fascinating), [The Tragedy of Cambodian History](https://yalebooks.yale.edu/book/9780300057522/the-tragedy-of-cambodian-history/) (didn't know much going in, pretty horrifying), and [Against the Grain](https://yalebooks.yale.edu/book/9780300240214/against-the-grain/) (interesting but hard to imagine ever having a better picture of a time period without a historical record).
+
+Hobby-wise I played a bunch of Hades and Celeste, played through Bayonetta 2, Rain World, and Super Mario Odyssey.  I spent a little time re-learning Differential Geometry (20 years after I took a course in it) and worked through a bunch more algebraic number theory problems in Marcus's Number Fields book, mainly Chapter 3 (the different ideal of a number field), Chapter 4 (ramification groups), Chapter 5 (the fundamental unit in real cubic fields).  Discovered new music in [Beach Bunny](https://www.beachbunnymusic.com/) and [Charly Bliss](http://charlybliss.com/).
+
+In these year in review posts that I try to summarize my life to provide a version of myself to look back on, but it's pretty hard to know how to summarize this year.  Lots less time in my head, lots more making sure everything around me is still running.  I expect it'll be a busy few years before I have time to really find myself again.
