@@ -3,7 +3,7 @@ layout: post
 title: "2022: In Review"
 ---
 
-Well, I became a dad this year.  We were very fortunate that Cora's been a happy and healthy little baby; she arrived more or less when we expected it and the new parent experience has been easy enough.  My days revolve around her schedule.  It's been a wonderful experience even if certain moments can be challenging.  I've just started three months of parental leave where I'll move into the primary caregiver role.  Looking forward to bbeing able to devote this kind of time and energy to my family, and I'm fortunate my work is so generous with leave.
+Well, I became a dad this year.  We were very fortunate that Cora's been a happy and healthy little baby; she arrived more or less when we expected it and the new parent experience has been easy enough.  My days revolve around her schedule.  It's been a wonderful experience even if certain moments can be challenging.  I've just started three months of parental leave where I'll move into the primary caregiver role.  Looking forward to being able to devote this kind of time and energy to my family, and I'm fortunate my work is so generous with leave.
 
 <img class="img-responsive" style="max-width:520px" src="/images/cora-7-months.jpg" alt="My daughter Cora, aged 7 months" />
 
