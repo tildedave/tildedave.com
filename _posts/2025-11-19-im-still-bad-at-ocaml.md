@@ -24,7 +24,7 @@ let fold m ~init ~f ~neighbors start =
         (neighbors next))
   done
 ```
-After using Clojure and its universal `conj`, `assoc`, `contains?` idioms that work polymorphically on data structures, it's _so_ painful to have to type `Hash_set.mem` around every hash set interaction.  Yes, it some places you can reduce the boilerplate with local opens, but no such luck here; `Queue` and `Hash_set` define conflicting members and the last one wins.
+After using Clojure and its universal `conj`, `assoc`, `contains?` idioms, it's _so_ painful to have to type `Hash_set.mem` around every hash set interaction.  Yes, it some places you can reduce the boilerplate with local opens, but no such luck here; `Queue` and `Hash_set` define conflicting members and the last one wins.
 
 Syntax-wise, I am never quite sure what level of precedence `;` has.  Does `if cond then stmt1; stmt2` mean do `stmt2` only when `cond` is true or not?  I am convinced that the language always chooses the opposite of whatever would be the prettiest code.  At least `ocamlformat` is a new addition to the dev chain.  I add parenthesis _everywhere_ I think there might be some ambiguity and it removes the unnecessary ones for me.
 
