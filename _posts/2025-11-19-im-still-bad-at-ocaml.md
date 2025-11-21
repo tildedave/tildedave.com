@@ -7,7 +7,7 @@ It's been 10 years since I wrote anything serious in OCaml and going through [Ev
 
 Unfortunately, I am still awful with this language.  I don't like the way my code looks, I don't like the syntax, and I don't like where it sits in the functional programming landscape.
 
-Interacting with data structures is still horribly verbose and I hate how much code looks.  Here's breadth-first search, adapted from Wikipedia.  Yes, it's using the imperative data structures (more on this later).
+Interacting with data structures is still horribly verbose and I never feel like I've written code that I enjoy to look at.  Here's breadth-first search, adapted from Wikipedia.  Yes, it's using the imperative data structures (more on this later).
 ```ocaml
 let fold m ~init ~f ~neighbors start =
   let queue, visited, acc = (Queue.create (), Hash_set.create m, ref init) in
