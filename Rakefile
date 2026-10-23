@@ -1,5 +1,4 @@
-BOOTSTRAP_SCSS = File.join(Gem::Specification.find_by_name('bootstrap-sass').gem_dir, 'assets/stylesheets')
-SASS_ARGS = "--load-path=#{BOOTSTRAP_SCSS} --style=compressed --no-source-map --quiet-deps --silence-deprecation=import scss/app.scss:stylesheets/app.css"
+SASS_ARGS = "--load-path=scss/vendor --style=compressed --no-source-map --quiet-deps --silence-deprecation=import scss/app.scss:stylesheets/app.css"
 
 task :update do |t|
   sh "git pull --rebase origin master"
