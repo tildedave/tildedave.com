@@ -1,9 +1,7 @@
 baseurl:        /
 port:    4000
 
-paginate: 5
 markdown: kramdown
-plugins: ['jekyll-paginate']
 
 
 picture:        "/images/me-outside.jpg"

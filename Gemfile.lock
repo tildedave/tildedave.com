@@ -43,7 +43,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-watch (2.2.1)
@@ -86,12 +85,7 @@ PLATFORMS
 DEPENDENCIES
   foreman
   jekyll (~> 4.3)
-  jekyll-paginate
-  kramdown (>= 2.3.1)
-  kramdown-parser-gfm
   rake
-  safe_yaml (~> 1.0.4)
-  webrick
 
 BUNDLED WITH
   4.0.23
