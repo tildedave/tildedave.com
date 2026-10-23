@@ -22,9 +22,9 @@ Outside of work, I [read](/reading.html), learn [math](https://github.com/tilded
     {% for post in site.posts limit:5 %}
     {% if post.is_unlisted %}
     {% else %}
-    <div class="row">
-      <div class="col-xs-3"><span>{{ post.date | date_to_string }}</span></div>
-      <div class="col-xs-9"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    <div class="post-list-item">
+      <div class="post-date"><span>{{ post.date | date_to_string }}</span></div>
+      <div class="post-link"><a href="{{ post.url }}">{{ post.title }}</a></div>
     </div>
     {% endif %}
     {% endfor %}

@@ -1,14 +1,3 @@
-// Jekyll does not generate the right markup
-// TODO figure out how to make Bootstrap build scale things down
-
-$font-size-h1: 28px;
-$font-size-h2: 24px;
-$font-size-h3: 20px;
-$font-size-base: 18px;
-
-@import "variables";
-@import "bootstrap";
-@import "bootstrap/theme";
-
-// My CSS overrides
-@import "site";
+@use "base";
+@use "layout";
+@use "site";
