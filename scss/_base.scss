@@ -1,0 +1,164 @@
+// Reset and typography. Values match what Bootstrap 3 produced for this site
+// (18px base font, 25px line rhythm) so pages look the same without it.
+
+$font-size-base: 18px;
+$line-height-base: 1.428571429;
+$line-height-computed: 25px;
+$line-height-half: 12.5px;
+$text-color: #333;
+$link-color: #337ab7;
+$link-hover-color: #23527c;
+$border-light: #eee;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: #fff;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+hr {
+  height: 0;
+  margin: $line-height-computed 0;
+  border: 0;
+  border-top: 1px solid $border-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: $line-height-half;
+  margin-bottom: $line-height-half;
+}
+
+h1, h2, h3 {
+  margin-top: $line-height-computed;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 23px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+p {
+  margin: 0 0 $line-height-half;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: $line-height-half;
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+code, kbd, pre, samp {
+  font-family: $font-family-monospace;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  padding: 12px;
+  margin: 0 0 $line-height-half;
+  font-size: $font-size-base - 1;
+  line-height: $line-height-base;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: $text-color;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+blockquote {
+  padding: $line-height-half $line-height-computed;
+  border-left: 5px solid $border-light;
+
+  p, ul, ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+table {
+  background-color: transparent;
+}
+
+td, th {
+  padding: 0;
+}
+
+th {
+  text-align: left;
+}

@@ -1,0 +1,44 @@
+// Page layout and the few helper classes used in posts.
+
+// Centered content column. The widths step up at the same breakpoints as the
+// old Bootstrap container + col-md-10 grid, so the line length is unchanged.
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: 768px) { max-width: 750px; }
+  @media (min-width: 992px) { max-width: 808.33px; }
+  @media (min-width: 1200px) { max-width: 975px; }
+}
+
+// Date / title rows on the homepage and archive.
+.post-list-item {
+  display: flex;
+  margin: 0 -15px;
+
+  > div {
+    padding: 0 15px;
+  }
+
+  .post-date {
+    flex: 0 0 25%;
+  }
+
+  .post-link {
+    flex: 0 0 75%;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.pull-right {
+  float: right !important;
+}
