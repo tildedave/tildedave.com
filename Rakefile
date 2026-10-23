@@ -1,10 +1,20 @@
+BOOTSTRAP_SCSS = File.join(Gem::Specification.find_by_name('bootstrap-sass').gem_dir, 'assets/stylesheets')
+SASS_ARGS = "--load-path=#{BOOTSTRAP_SCSS} --style=compressed --no-source-map --quiet-deps --silence-deprecation=import scss/app.scss:stylesheets/app.css"
+
 task :update do |t|
   sh "git pull --rebase origin master"
 end
 
-task :build do |t|
-  sh "compass compile --force"
-  sh "jekyll build"
+task :css do |t|
+  sh "bundle exec sass #{SASS_ARGS}"
+end
+
+task :css_watch do |t|
+  sh "bundle exec sass --watch #{SASS_ARGS}"
+end
+
+task :build => [:css] do |t|
+  sh "bundle exec jekyll build"
 end
 
 task :upload => [:build] do

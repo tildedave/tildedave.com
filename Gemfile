@@ -1,16 +1,11 @@
 source 'https://rubygems.org'
 
-gem "jekyll", ">= 3.6.3"
-gem 'albino', '1.3.3'
+gem "jekyll", "~> 4.3"
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'foreman'
-gem 'compass'
 gem 'rake'
-gem 'syck'
 gem 'kramdown', '>= 2.3.1'
 gem 'kramdown-parser-gfm'
 gem 'safe_yaml', '~> 1.0.4'
-gem 'redcarpet'
 gem 'jekyll-paginate'
-gem 'pygmentize'
 gem 'webrick'
