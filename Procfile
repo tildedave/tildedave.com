@@ -1,2 +1,2 @@
-sass: compass watch
-jekyll: jekyll serve --drafts --watch
+sass: rake css_watch
+jekyll: bundle exec jekyll serve --drafts --watch
