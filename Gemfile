@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "jekyll", ">= 3.6.3"
+gem "jekyll", "~> 4.3"
 gem 'albino', '1.3.3'
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'foreman'
