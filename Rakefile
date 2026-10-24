@@ -1,9 +1,5 @@
 SASS_ARGS = "--style=compressed --no-source-map scss/app.scss:stylesheets/app.css"
 
-task :update do |t|
-  sh "git pull --rebase origin master"
-end
-
 task :css do |t|
   sh "bundle exec sass #{SASS_ARGS}"
 end

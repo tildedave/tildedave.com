@@ -1,6 +1,7 @@
 *~
 _site
 _cache
+_drafts
 .sass-cache
 stylesheets/app.css
 stylesheets/site.css
