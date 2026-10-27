@@ -2,8 +2,8 @@
 <html lang="en-us">
   <head>
     <title>{{ page.title }}</title>
-    <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css"></link>
+    <link href="/stylesheets/app.css?v={{ site.time | date: '%s' }}" media="screen, projector, print" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css?v={{ site.time | date: '%s' }}"></link>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}"></link>
     {% if page.url == "/index.html" %}
     <meta name="description" content="Dave King is a software professional living in Durham, NC.  He writes about software design, thinking techniques, and team processes.">
